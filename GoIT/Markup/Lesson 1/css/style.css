@@ -2,7 +2,6 @@
     background: #EEEEEE;
     width: 1440px;
     height: 806px;
-    border-bottom: 2px solid black;
     }
 
   .wrapper {
@@ -21,4 +20,5 @@
   img {
     width: 131px;
     height: auto;
+    border-radius: 10px;
     }
