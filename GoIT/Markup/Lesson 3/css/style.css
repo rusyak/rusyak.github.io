@@ -1,0 +1,125 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #F9F9F9;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+	background-color: #FFFFFF;
+	width: 800px;
+	margin: 0 auto;
+	padding: 50px 45px 60px;
+}
+
+/*шапка*/
+.header {
+  background-color: #FFFFFF;
+}
+.header ul {
+  font-size:0;
+  line-height:0;
+  letter-spacing:-1px;
+  background: background: rgba(93,93,93,1);
+  background: -moz-linear-gradient(top, rgba(93,93,93,1) 0%, rgba(69,68,68,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(93,93,93,1)), color-stop(100%, rgba(69,68,68,1)));
+  background: -webkit-linear-gradient(top, rgba(93,93,93,1) 0%, rgba(69,68,68,1) 100%);
+  background: -o-linear-gradient(top, rgba(93,93,93,1) 0%, rgba(69,68,68,1) 100%);
+  background: -ms-linear-gradient(top, rgba(93,93,93,1) 0%, rgba(69,68,68,1) 100%);
+  background: linear-gradient(to bottom, rgba(93,93,93,1) 0%, rgba(69,68,68,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d5d5d', endColorstr='#454444', GradientType=0 );
+  margin: 40px auto;
+}
+.header li {
+  display: inline-block;
+  padding: 5px;
+  font-size:14px; 
+  line-height:40px;
+  letter-spacing:normal;
+  display: -moz-inline-stack!important;
+  display:inline-block;
+  //display:inline;
+  zoom:1;
+  color: white;
+  padding: 0 25px;
+  list-style-type: none;
+}
+.header .product {
+	background-color: #303030;
+	border-left: 1px solid #838383;
+	border-right: 1px solid #838383;
+}
+/*шапка*/
+
+/*контейнер*/
+.container {
+  background-color: #FFFFFF;
+  overflow: auto;
+  margin-bottom: 35px;
+}
+.container ul {
+  width: 240px;
+  position: relative;
+  float: left;
+  border-left: 1px solid #c8c8c8;
+  border-right: 1px solid #c8c8c8;
+  border-top: 1px solid #c8c8c8;
+}
+.container li {
+  line-height: 40px;
+  padding-left: 23px;
+  border-bottom: 1px solid #c8c8c8;
+  list-style-type: none;
+}
+
+.container div {
+  width: 250px;
+  position: relative;
+  float: left;
+  margin-left: 55px;
+}
+.container p {
+  padding: 25px;
+  width: 450px;
+}
+.container img {
+	border: 1px solid #c8c8c8;
+}
+.container .select_phone {
+	background-color: #f9f9f9;
+	padding-left: 35px; 
+}
+/*контейнер*/
+
+/*footer*/
+.footer {
+  background-color: #e1e1e1;
+}
+.footer ul {
+  font-size:0;
+  line-height:0;
+  letter-spacing:-1px;
+}
+.footer li {
+  display: inline-block;
+  padding: 5px;
+  font-size:14px; 
+  line-height:40px;
+  letter-spacing:normal;
+  display: -moz-inline-stack!important;
+  display:inline-block;
+  //display:inline;
+  zoom:1;
+  padding: 0 25px;
+  list-style-type: none;
+}
+.select {
+	text-decoration: underline;
+}
+.author {
+  float: right;
+}
+/*footer*/
