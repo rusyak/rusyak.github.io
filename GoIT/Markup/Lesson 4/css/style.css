@@ -1,0 +1,157 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url("../img/background.png");
+}
+.wrapper {
+	width: 1000px;
+	height: ;
+	margin: 0 auto;
+	background-color: #ffffff;
+	font-family: Tahoma;
+	font-size: 15px;
+}
+/*HEADER*/
+.header {
+	padding: 10px;
+	height: 193px;
+}
+.clearfix:after {
+	content		: ".";
+	display		: block;
+	height		: 0;
+	clear		: both;
+}
+.logo {
+	float: left;
+	width: 280px;
+	height: 175px;
+}
+.contacts {
+	float: right;
+	height: 70px;
+	color: blue;
+}
+.contacts a {
+	text-decoration: none;
+}
+.countries {
+	float: right;
+	clear: right;
+	overflow: hidden;
+	margin-top: 50px;
+	text-align: center;
+	}
+.india, .nepal, .tibet, .butan, .lanka, .maldiv {
+	float: left;
+	width: 80px;
+}
+.countries a {
+	display: block;
+}
+/*HEADER*/
+
+/*NAV_PHOTO*/
+
+.nav>ul {
+	width: 100%;
+	list-style: none;
+	background-color: black;
+	position: relative;
+	float: left;
+	font-size: 15px;
+}
+ul a {
+	color: white;
+	text-decoration: none;
+}
+ul li {
+	float: left; /* элементы списка делаем блочными и выстраиваем в ряд */
+	height: 20px; /* высоту лучше жестко указать, чтобы выпадающее меню появлялось в предсказуемом месте */
+	cursor: pointer;
+	position: relative; /* чтобы выпадающее меню позиционировалось относительно родителя */
+	z-index: 1;
+	width: 13%;
+	text-align: center;
+	padding: 5px;
+}
+ul li ul {
+	display: none; /* скрываем выпадающе меню */
+	position: absolute; /* чтобы положение подменю не влияло на окружение и легко было позиционировать */
+	left: 0;
+	top: 30px; /* высоту лучше не делать большей высоты пункта меню первого уровня, иначе попасть на подменю будет проблематично */
+	margin: 0;
+	padding-left: 9px;
+	width: 130px;
+	background: black;
+	border: 1px solid #000;
+}
+ul li ul li {
+	float: none;
+	display: block;
+	background: none;
+	border-bottom: 1px solid #CCC;
+}
+ul li:hover ul {
+	display: block; /* при наведении на пункт меню первого уровня, показывем подменю */
+}
+span.arrow-up {
+	width:0px; 
+	height:0px; 
+	border-left:5px solid transparent;  /* левый наклон стрелки */
+	border-right:5px solid transparent; /* правый наклон стрелки */
+	border-top:5px solid #fff; /* низ, указываем цвет стрелки */
+	margin:0 auto; /* центрируем стрелку в родительском контейнере */
+    display: inline-block;
+    margin-left: 5px;
+}
+/*NAV_PHOTO*/
+
+/*content_sidebar*/
+.content_sidebar {
+	background: white;
+	width: 1000px;
+  	overflow: hidden;
+  	border-bottom: 3px solid black;
+}
+.sidebar {
+  	float: left;
+  	width: 210px;
+   	background-color: #edeef0;
+  	padding-bottom: 20000px;
+	margin-bottom: -20000px;
+}
+.sidebar h3,
+.news h3 {
+	text-align: center;
+}
+.sidebar p,
+.news p {
+	padding: 5px 12px;	
+}
+.news {
+  	float: right;
+  	width: 210px;
+  	background-color: #edeef0;
+  	padding-bottom: 20000px;
+	margin-bottom: -20000px;
+}
+.content {
+  	margin: 0 auto;
+  	width: 580px;
+  	background-color: #ffffff;
+  	padding-bottom: 20000px;
+	margin-bottom: -20000px;
+}
+/*content_sidebar*/
+/*footer*/
+.footer {
+  	width: 1000px;
+  	clear: both;
+  	text-align: center;
+  	margin: 0px auto;
+}
+/*footer*/
