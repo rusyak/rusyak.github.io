@@ -5,60 +5,57 @@
 
 body {
 	background-color: #F9F9F9;
-	font-family: 'Open Sans', sans-serif;
+	font-family: Open Sans, sans-serif;
 }
 
 .wrapper {
 	background-color: #FFFFFF;
-	width: 800px;
+	width: 960px;
 	margin: 0 auto;
-	padding: 50px 45px 60px;
+	padding: 50px 50px 60px;
+  box-shadow: 0px 0px 8px -1px rgba(171,171,171,1);
 }
 
 /*шапка*/
 .header {
   background-color: #FFFFFF;
 }
-.header ul {
-  font-size:0;
-  line-height:0;
-  letter-spacing:-1px;
-  background: background: rgba(93,93,93,1);
-  background: -moz-linear-gradient(top, rgba(93,93,93,1) 0%, rgba(69,68,68,1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(93,93,93,1)), color-stop(100%, rgba(69,68,68,1)));
-  background: -webkit-linear-gradient(top, rgba(93,93,93,1) 0%, rgba(69,68,68,1) 100%);
-  background: -o-linear-gradient(top, rgba(93,93,93,1) 0%, rgba(69,68,68,1) 100%);
-  background: -ms-linear-gradient(top, rgba(93,93,93,1) 0%, rgba(69,68,68,1) 100%);
+ul.nav {
+  font-size: 15px;
+  line-height: 40px;
   background: linear-gradient(to bottom, rgba(93,93,93,1) 0%, rgba(69,68,68,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d5d5d', endColorstr='#454444', GradientType=0 );
   margin: 40px auto;
-}
-.header li {
-  display: inline-block;
-  padding: 5px;
-  font-size:14px; 
-  line-height:40px;
-  letter-spacing:normal;
-  display: -moz-inline-stack!important;
-  display:inline-block;
-  //display:inline;
-  zoom:1;
-  color: white;
-  padding: 0 25px;
   list-style-type: none;
+  display: inline-block;
+  width: 100%;
 }
-.header .product {
-	background-color: #303030;
-	border-left: 1px solid #838383;
-	border-right: 1px solid #838383;
+ul.nav li {
+  float: left;
+}
+ul.nav li a {
+	color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0px 25px;
+}
+ul.nav a:hover {
+  margin: 0;
+  background-color: #404040; 
+	box-shadow: 0px 0px 8px -1px rgba(171,171,171,1);
 }
 /*шапка*/
 
 /*контейнер*/
 .container {
   background-color: #FFFFFF;
-  overflow: auto;
   margin-bottom: 35px;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }
 .container ul {
   width: 240px;
@@ -67,30 +64,39 @@ body {
   border-left: 1px solid #c8c8c8;
   border-right: 1px solid #c8c8c8;
   border-top: 1px solid #c8c8c8;
+  font-size: 14px;
 }
 .container li {
   line-height: 40px;
-  padding-left: 23px;
+  padding-left: 25px;
   border-bottom: 1px solid #c8c8c8;
   list-style-type: none;
 }
 
-.container div {
-  width: 500px;
-  position: relative;
-  float: left;
-  margin-left: 55px;
+.container li a {
+  color: black;
+  text-decoration: none;
 }
+
 .container p {
   padding: 25px;
-  width: 450px;
+  width: 630px;
+  clear: both;
+  float: right;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 22px;
 }
-.container img {
+.container  div img {
 	border: 1px solid #c8c8c8;
+  float: right;
+  padding: 45px 85px;
 }
-.container .select_phone {
-	background-color: #f9f9f9;
-	padding-left: 35px; 
+.container a:hover {
+  display: block;
+  padding-left: 45px;
+  margin-left: -25px;
+  background-color: #f9f9f9;
 }
 /*контейнер*/
 
@@ -101,25 +107,23 @@ body {
 .footer ul {
   font-size:0;
   line-height:0;
-  letter-spacing:-1px;
 }
 .footer li {
   display: inline-block;
-  padding: 5px;
   font-size:14px; 
   line-height:40px;
-  letter-spacing:normal;
-  display: -moz-inline-stack!important;
-  display:inline-block;
-  //display:inline;
-  zoom:1;
-  padding: 0 25px;
+  margin: 0 25px;
   list-style-type: none;
 }
-.select {
+.footer li a {
+  color: black;
+  text-decoration: none;
+}
+.footer a:hover {
 	text-decoration: underline;
 }
 .author {
   float: right;
+  margin: 11px 25px;
 }
 /*footer*/
