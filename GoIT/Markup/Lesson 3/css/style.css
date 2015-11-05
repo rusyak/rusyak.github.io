@@ -100,7 +100,7 @@ body {
 }
 
 .container .bicycle {
-	  border: 1px solid #c8c8c8;
+	border: 1px solid #c8c8c8;
     float: right;
     padding: 45px 85px;
 }
@@ -132,7 +132,7 @@ body {
 }
 
 .footer a:hover {
-	  text-decoration: underline;
+	text-decoration: underline;
 }
 
 .author {
