@@ -20,28 +20,36 @@ body {
 .header {
   background-color: #FFFFFF;
 }
-ul.nav {
-  font-size: 15px;
-  line-height: 40px;
+
+.nav {
+  margin: 40px 0; 
   background: linear-gradient(to bottom, rgba(93,93,93,1) 0%, rgba(69,68,68,1) 100%);
-  margin: 40px auto;
-  list-style-type: none;
-  display: inline-block;
-  width: 100%;
 }
-ul.nav li {
+
+.nav li {
   float: left;
+  list-style: none;
 }
-ul.nav li a {
-	color: white;
-  text-decoration: none;
+
+.nav li a:first-child { 
+  margin-left: 0; 
+}
+
+.nav li a {
   display: block;
-  padding: 0px 25px;
+  margin: 0 0 0 16px;
+  padding: 0 24px 0 24px;
+  line-height: 40px;
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  text-shadow: 2px 1px 1px rgba(0,0,0,0.5);
 }
-ul.nav a:hover {
-  margin: 0;
-  background-color: #404040; 
-	box-shadow: 0px 0px 8px -1px rgba(171,171,171,1);
+
+.nav li a:hover {
+  padding: 0 24px 0 24px;
+  background-color: #404040;
+  box-shadow: 0px 0px 8px -1px rgba(171,171,171,1);
 }
 /*шапка*/
 
@@ -50,6 +58,7 @@ ul.nav a:hover {
   background-color: #FFFFFF;
   margin-bottom: 35px;
 }
+
 .clearfix:after {
   content: ".";
   display: block;
@@ -57,6 +66,7 @@ ul.nav a:hover {
   clear: both;
   visibility: hidden;
 }
+
 .container ul {
   width: 240px;
   position: relative;
@@ -66,6 +76,7 @@ ul.nav a:hover {
   border-top: 1px solid #c8c8c8;
   font-size: 14px;
 }
+
 .container li {
   line-height: 40px;
   padding-left: 25px;
@@ -87,11 +98,13 @@ ul.nav a:hover {
   font-size: 14px;
   line-height: 22px;
 }
-.container  div img {
+
+.container .bicycle {
 	border: 1px solid #c8c8c8;
   float: right;
   padding: 45px 85px;
 }
+
 .container a:hover {
   display: block;
   padding-left: 45px;
@@ -104,24 +117,24 @@ ul.nav a:hover {
 .footer {
   background-color: #e1e1e1;
 }
-.footer ul {
-  font-size:0;
-  line-height:0;
-}
-.footer li {
+
+.footer ul li {
   display: inline-block;
   font-size:14px; 
   line-height:40px;
   margin: 0 25px;
   list-style-type: none;
 }
+
 .footer li a {
   color: black;
   text-decoration: none;
 }
+
 .footer a:hover {
 	text-decoration: underline;
 }
+
 .author {
   float: right;
   margin: 11px 25px;
