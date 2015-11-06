@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}   
+.wrapper {
+  margin: 0 auto;
+  width: 500px;
+}
+table {
+  border-collapse: collapse;
+}
+th, td {
+  border: 10px solid black;      
+}
+    
+    /*ONE*/
+    
+.one td:first-child {
+  border-top: none;
+  border-left: none;
+  width: 116px;
+  height: 47px;
+  background-color: white;
+}
+.one td:nth-child(2) {
+  border-top: none;
+  width: 200px;
+  height: 47px;
+  background-color: white;
+}
+.one td:last-child {
+  border-right: none;
+  border-top: none;
+  background-color: yellow;
+  width: 164px;
+  height: 47px;
+}
+    
+    /*TWO*/
+    
+.two td:first-child {
+  border-left: none;
+  width: 48px;
+  height: 129px;
+  background-color: white;
+}
+.two td:nth-child(2) {
+  background-color: red;
+  width: 268px;
+  height: 268px;
+}
+.two td:last-child {
+  border-right: none;
+  background-color: yellow;
+  width: 164px;
+  height: 129px;
+}
+    
+    /*THREE*/
+    
+.three td:first-child{
+  border-left: none;
+  width: 48px;
+  height: 199px;
+  background-color: white;
+}
+.three td:nth-child(2) {
+  background-color: white;
+  width: 77px;
+  height: 129px;
+}
+.three td:last-child {
+  border-right: none;
+  background-color: white;
+  width: 77px;
+  height: 129px;
+}
+    
+    /*FOUR*/
+    
+.four td:first-child {
+  background-color: black;
+  width: 131px;
+  height: 128px;
+}
+.four td:nth-child(2) {
+  background-color: white;
+  width: 127px;
+  height: 59px;
+}
+.four td:last-child {
+  border-right: none;
+  width: 164px;
+  height: 59px;
+  background-color: white;
+}
+    
+    /*FIVE*/
+    
+.five td:first-child {
+  border-bottom: none;
+  border-left: none;
+  background-color: yellow;
+  width: 48px;
+  height: 135px;
+}
+.five td:nth-child(2) {
+  background-color: white;
+  width: 127px;
+  height: 59px;
+}
+.five td:last-child {
+  border-right: none;
+  background-color: blue;
+  width: 164px;
+  height: 98px;
+}
+    
+    /*SIX*/
+    
+.six td:first-child {
+  border-bottom: none;
+  width: 131px;
+  height: 68px;
+  background-color: white;
+}    
+.six td:nth-child(2) {
+  background-color: black;
+  width: 127px;
+  height: 29px;
+}
+    
+    /*SEVEN*/
+    
+.seven td:first-child {
+  border-bottom: none;
+  border-right: none;
+  width: 301px;
+  height: 29px;
+  background-color: white;
+}
