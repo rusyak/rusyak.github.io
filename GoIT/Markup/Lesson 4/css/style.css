@@ -17,6 +17,7 @@ body {
 /*HEADER*/
 .header {
 	padding: 10px;
+	padding-bottom: 0;
 	min-height: 193px;
 }
 .clearfix:after {
@@ -27,8 +28,15 @@ body {
 }
 .logo {
 	float: left;
+	position: relative;
 	width: 280px;
-	height: 175px;
+	height: 203px;
+}
+.logo span {
+	position: absolute;
+	top: 110px;
+	left: 60px;
+	color: #71aec1;
 }
 .contacts {
 	float: right;
@@ -55,6 +63,8 @@ body {
 }
 .photo img {
 	margin-bottom: -3px;
+	border-top: 1px solid #138aa7;
+	border-bottom: 1px solid #138aa7;
 }
 /*HEADER*/
 
@@ -90,6 +100,7 @@ body {
 	left: 0;
 	top: 30px; 
 	margin: 0;
+	margin-top: 1px;
 	width: 130px;
 	background-color: #333333;
 }
