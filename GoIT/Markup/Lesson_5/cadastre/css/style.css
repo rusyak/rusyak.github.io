@@ -14,8 +14,8 @@
 	padding: 0;
 	font-family: 'Helvetica Neue';
 }
-.wrapper {
-	background: url(../img/bg_image.png) no-repeat;
+body {
+	background: url(../img/bg_image.png) fixed top no-repeat;
 	background-size: cover;
 }
 .clearfix:after {
@@ -63,9 +63,30 @@
 	color: white;
 }
 .nav .enter a {
-	text-decoration: underline;
 	padding: 0 5px;
 }
+.nav .enter_one,
+.nav .enter_two {
+	text-decoration: underline;
+	background-image: linear-gradient(to bottom, #4DABDA 0%, #2D79C3 100%);
+}
+.enter_span {
+	background-image: linear-gradient(to bottom, #4DABDA 0%, #2D79C3 100%);
+}
+.span_ola {
+	padding-left: 15px;
+}
+.enter_one {
+	padding-right: 15px;
+}
+.nav .enter_one:hover,
+.nav .enter_two:hover {
+	text-decoration: none;
+}
+.nav .enter_three:hover {
+	text-decoration: underline;
+}
+
 .nav li:first-child {
 	margin-right: 25px;
 }
@@ -115,22 +136,25 @@
 }
 
 .fb-button .icon {
+	position: absolute;
+	left: 0;
 	width: 30px;
-	height: 30px;
+	height: 29px;
 	border-radius: 4px 0px 0px 4px;
 	font-family: "Arial Bold", sans-serif;
-	font-weight: bolder;
 	font-size: 22px;
 }
 
 .fb-button .title {
+	position: relative;
 	height: 30px;
-	padding: 0 20px;
-	border-radius: 0px 4px 4px 0px;
+	padding: 0 20px 0 50px;
+	border-radius: 4px;
 	font-family: "Arial Bold", sans-serif;
 	font-weight: normal;
 	font-size: 14px;
 	width: 202px;
+	text-align: center;
 }
 	
 .fb-button .title:hover {
@@ -153,6 +177,7 @@
 .agreement {
 	text-align: center;
 	color: #cccccc;
+	margin-bottom: 30px;
 }
 
 
@@ -174,7 +199,8 @@
     content: '';
     position: absolute;
     width: 100%;
-    border-top: 2px solid black;
+    border-top: 1px solid #666666;
+    border-bottom: 1px solid #000;
     margin-top: .6em;
 }
 .line > span:before {
@@ -203,11 +229,17 @@ form input:hover:not([type="checkbox"]) {
 	color: white;
 }
 form input[type="submit"] {
-	display: block;
 	width: 150px;
-	margin: 0 auto;
+	margin: 0 auto 22px;
 	padding-left: 0px;
-	background-color: #307cc5;
-	border-radius: 5px;
-	margin-bottom: 22px;
+	display: block;
+	background: linear-gradient(to top, #2e7ac4,#50aedb);
+	border-radius: 2px; 
+	border: 1px solid #4e9ed8; 
+	line-height: 33px; 
+	font-family: HelveticaNeueRoman, Tahoma, sans-serif; 
+	font-size: 14px; 
+	text-align: center; 
+	color: #fff; 
+	cursor: pointer;
 }
