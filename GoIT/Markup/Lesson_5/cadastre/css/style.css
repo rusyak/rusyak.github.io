@@ -28,13 +28,17 @@ body {
 
 /*NAVIGATION*/
 
+.container_nav {
+	width: 1000px;
+	margin: 0 auto;
+}
 .nav {
 	height: 36px;
 	background-color: #075190;
 }
 .nav li {
 	float: right;
-	display: block;
+	display: inline-flex;
 	list-style: none;
 	line-height: 36px;
 }
@@ -51,7 +55,6 @@ body {
 }
 .nav li:nth-child(5) {
 	border-left: 1px solid #56a2dc;
-	margin-right: 25px;
 }
 .nav li:nth-child(5) a {
 	background: url(../img/flag.png) no-repeat;
@@ -74,10 +77,11 @@ body {
 	background-image: linear-gradient(to bottom, #4DABDA 0%, #2D79C3 100%);
 }
 .span_ola {
-	padding-left: 15px;
+	padding-left: 20px;
 }
 .enter_one {
-	padding-right: 15px;
+	padding-right: 20px;
+	margin-right: 50px;
 }
 .nav .enter_one:hover,
 .nav .enter_two:hover {
@@ -86,7 +90,13 @@ body {
 .nav .enter_three:hover {
 	text-decoration: underline;
 }
-
+.nav .enter_three::before {
+	content: "";
+	border: 1px solid #4C96D1;
+}
+.nav .enter_three a {
+	padding: 0 20px;
+}
 .nav li:first-child {
 	margin-right: 25px;
 }
@@ -143,17 +153,18 @@ body {
 	border-radius: 4px 0px 0px 4px;
 	font-family: "Arial Bold", sans-serif;
 	font-size: 22px;
+	border: none;
+    border-right: 1px solid #4d66a6;
 }
-
 .fb-button .title {
 	position: relative;
 	height: 30px;
-	padding: 0 20px 0 50px;
 	border-radius: 4px;
+	padding-left: 30px;
 	font-family: "Arial Bold", sans-serif;
 	font-weight: normal;
 	font-size: 14px;
-	width: 202px;
+	width: 243px;
 	text-align: center;
 }
 	
@@ -166,6 +177,10 @@ body {
 	color: #f88;
 	border: 1px inset #184aa5;
 }
+.fb-button .title::after {
+	content: ">";
+	margin-left: 20px;
+}
 /*facebook*/ 
 
 .checkbox{
@@ -175,9 +190,12 @@ body {
 	margin-left: 15px;
 }
 .agreement {
-	text-align: center;
 	color: #cccccc;
 	margin-bottom: 30px;
+}
+.agreement span {
+	display: block;
+	text-align: center;
 }
 
 
