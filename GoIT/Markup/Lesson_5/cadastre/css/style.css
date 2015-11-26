@@ -28,77 +28,71 @@ body {
 
 /*NAVIGATION*/
 
-.container_nav {
-	width: 1000px;
-	margin: 0 auto;
+.menu {
+	width: 100%;
+	background-color: #085292;
 }
-.nav {
-	height: 36px;
-	background-color: #075190;
-}
-.nav li {
+.menu ul {
 	float: right;
-	display: inline-flex;
 	list-style: none;
-	line-height: 36px;
 }
-.nav li a {
+.menu li {
+	float: left;
+	position: relative;
+}
+.menu a {
 	display: block;
+	padding: 0 10px;
+	line-height: 36px;
 	text-decoration: none;
 	color: #60b5ed;
-	font-size: 16px;
-	padding: 0 12px;
 }
-.nav .menu a:hover {
-	background-color: #4eabda;
-	color: #fff;
-}
-.nav li:nth-child(5) {
-	border-left: 1px solid #56a2dc;
-}
-.nav li:nth-child(5) a {
-	background: url(../img/flag.png) no-repeat;
-	background-position: 19px center;
-	padding-left: 50px;
-}
-.nav .enter a,
- .enter span {
-	color: white;
-}
-.nav .enter a {
-	padding: 0 5px;
-}
-.nav .enter_one,
-.nav .enter_two {
+.menu span {
 	text-decoration: underline;
-	background-image: linear-gradient(to bottom, #4DABDA 0%, #2D79C3 100%);
 }
-.enter_span {
-	background-image: linear-gradient(to bottom, #4DABDA 0%, #2D79C3 100%);
-}
-.span_ola {
-	padding-left: 20px;
-}
-.enter_one {
-	padding-right: 20px;
-	margin-right: 50px;
-}
-.nav .enter_one:hover,
-.nav .enter_two:hover {
+.menu span:hover {
 	text-decoration: none;
 }
-.nav .enter_three:hover {
-	text-decoration: underline;
+.menu a:hover {
+	background-color: #4eabda;
+	color: white;
 }
-.nav .enter_three::before {
-	content: "";
-	border: 1px solid #4C96D1;
+.menu li:nth-child(5) {
+	margin-right: 15px;
 }
-.nav .enter_three a {
-	padding: 0 20px;
+.menu li:nth-child(5):after {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 2.5px;
+	right: -15px;
+ 	height: 31px;
+ 	width: 2px;
+	background: url(../img/line.png) no-repeat;
 }
-.nav li:first-child {
-	margin-right: 25px;
+.menu li:nth-child(6) a {
+	color: white;
+	padding-left: 46px;
+}
+.menu li:nth-child(6) a:before {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 6.5px;
+	left: 15px;
+ 	height: 31px;
+ 	width: 21px;
+	background: url(../img/flag.png) no-repeat;
+}
+.menu li:nth-child(6) a:hover {
+	background: none;
+	text-decoration: underline;	
+}
+ .menu li:last-child a {
+	color: white;
+	background: #4eacda;
+	background: linear-gradient(to bottom, #4eacda 0%,#2e7ac4 100%);
+	margin-right: 20px;
 }
 
 /*REGISTRATION*/
