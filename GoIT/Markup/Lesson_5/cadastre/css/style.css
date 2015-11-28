@@ -32,11 +32,13 @@ body {
 	width: 100%;
 	background-color: #085292;
 }
-.menu ul {
+.menu ul,
+.menu .enter_form {
 	float: right;
 	list-style: none;
 }
-.menu li {
+.menu li,
+.menu .enter_form p {
 	float: left;
 	position: relative;
 }
@@ -70,11 +72,11 @@ body {
  	width: 2px;
 	background: url(../img/line.png) no-repeat;
 }
-.menu li:nth-child(6) a {
+.enter_form .offer a {
 	color: white;
 	padding-left: 46px;
 }
-.menu li:nth-child(6) a:before {
+.enter_form .offer a:before {
 	display: block;
 	content: '';
 	position: absolute;
@@ -84,11 +86,11 @@ body {
  	width: 21px;
 	background: url(../img/flag.png) no-repeat;
 }
-.menu li:nth-child(6) a:hover {
+.enter_form .offer a:hover {
 	background: none;
 	text-decoration: underline;	
 }
- .menu li:last-child a {
+.enter_form .signup a {
 	color: white;
 	background: #4eacda;
 	background: linear-gradient(to bottom, #4eacda 0%,#2e7ac4 100%);
