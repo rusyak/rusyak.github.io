@@ -32,6 +32,10 @@ body {
 	width: 100%;
 	background-color: #085292;
 }
+.menu_1 {
+	width: 1124px;
+	margin: 0 auto;
+}
 .menu ul,
 .menu .enter_form {
 	float: right;
@@ -49,13 +53,7 @@ body {
 	text-decoration: none;
 	color: #60b5ed;
 }
-.menu span {
-	text-decoration: underline;
-}
-.menu span:hover {
-	text-decoration: none;
-}
-.menu a:hover {
+.menu ul li a:hover {
 	background-color: #4eabda;
 	color: white;
 }
@@ -90,11 +88,23 @@ body {
 	background: none;
 	text-decoration: underline;	
 }
-.enter_form .signup a {
-	color: white;
+.enter_form .signup {
 	background: #4eacda;
-	background: linear-gradient(to bottom, #4eacda 0%,#2e7ac4 100%);
+	background: linear-gradient(to top, #2e7ac4, #51b1dc);
 	margin-right: 20px;
+	padding-left: 12px;
+}
+.enter_form .signup span,
+.enter_form .signup a {
+	float: left;
+	line-height: 36px;
+	color: white;
+}
+.enter_form .signup a {
+	text-decoration: underline;
+}
+.enter_form .signup a:hover {
+	text-decoration: none;
 }
 
 /*REGISTRATION*/
