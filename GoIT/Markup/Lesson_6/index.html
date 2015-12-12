@@ -6,20 +6,18 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+<div class="wrapper">
   <header>
     <div class="top_panel">
       <div class="number">
-        <img src="img/phone.png" alt="phone">
-        <span> (044)123-45-67 (044)567-89-10 </span>
+        <span class="number_container"> (044)123-45-67 (044)567-89-10 </span>
       </div>
       <div class="enter">
         <form action="#">
-        <img src="img/login.png" alt="login">
-        <input type="text" placeholder="логин">
-        <input  type="password" placeholder="пароль">
+        <input type="text" placeholder="логин" required>
+        <input  type="password" placeholder="пароль" required>
         <input type="submit" value="вход">
         </form>
-        <hr noshade>
         <a class="regist" href="#">регистрация</a>
         <a class="forget" href="#">забыли пароль?</a>
       </div>
@@ -35,6 +33,10 @@
   </header>
   
   <div class="nav_menu clearfix">
+    <div class="cart">
+      <p class="goods">товаров:<span>0</span></p>
+      <p class="total">на сумму:<span>0,00 грн.</span></p>
+    </div>
     <nav>
       <ul>
         <li><a href="#">О КОМПАНИ</a></li>
@@ -44,11 +46,6 @@
         <li><a href="#">КОНТАКТЫ</a></li>
       </ul>
     </nav>
-    <div class="cart">
-      <img src="img/cart.png" alt="cart">
-      <p class="goods">товаров:<span>0</span></p>
-      <p class="total">на сумму:<span>0,00 грн.</span></p>
-    </div>
   </div>
   
   <div class="search_forms clearfix">
@@ -61,20 +58,34 @@
   
         <label>Марка <span>авто:</span></label>
         <select name="marka">
-            <option label=" "></option>
-          </select>
+            <option label="Audi">Audi</option>
+            <option label="BMW">BMW</option>
+            <option label="Mitsubishi">Mitsubishi</option>
+            <option label="Subaru">Subaru</option>
+            <option label="Suzuki">Suzuki</option>
+        </select>
         <label>Модель <span>автомобиля:</span></label>
         <select name="model">
-            <option label=" "></option>
-          </select>
+            <option label="A4">A4</option>
+            <option label="X5">X5</option>
+            <option label="Lancer X">Lancer X</option>
+            <option label="WRX">WRX</option>
+            <option label="Swift">Swift</option>
+        </select>
         <label>Год выпуска <span>автомобиля:</span></label>
         <select name="year" class="year">
-            <option label=" "></option>
-          </select>
+            <option label="2010">2010</option>
+            <option label="2011">2011</option>
+            <option label="2012">2012</option>
+            <option label="2013">2013</option>
+            <option label="2014">2014</option>
+        </select>
         <label>Комплектация:</label>
         <select name="complect">
-            <option label=" "></option>
-          </select>
+            <option label="Basic">Basic</option>
+            <option label="Lux">Lux</option>
+            <option label="Sport">Sport</option>
+        </select>
       </div>
       </div>
 
@@ -84,36 +95,61 @@
   
         <label>Марка <span>авто:</span></label>
         <select name="marka">
-            <option label=" "></option>
-          </select>
+            <option label="Audi">Audi</option>
+            <option label="BMW">BMW</option>
+            <option label="Mitsubishi">Mitsubishi</option>
+            <option label="Subaru">Subaru</option>
+            <option label="Suzuki">Suzuki</option>
+        </select>
         <label>Модель <span>автомобиля:</span></label>
         <select name="model">
-            <option label=" "></option>
-          </select>
+            <option label="A4">A4</option>
+            <option label="X5">X5</option>
+            <option label="Lancer X">Lancer X</option>
+            <option label="WRX">WRX</option>
+            <option label="Swift">Swift</option>
+        </select>
         <label>Год выпуска <span>автомобиля:</span></label>
         <select name="year" class="year">
-            <option label=" "></option>
-          </select>
+            <option label="2010">2010</option>
+            <option label="2011">2011</option>
+            <option label="2012">2012</option>
+            <option label="2013">2013</option>
+            <option label="2014">2014</option>
+        </select>
         <label>Комплектация:</label>
         <select name="complect">
-            <option label=" "></option>
-          </select>
+            <option label="Basic">Basic</option>
+            <option label="Lux">Lux</option>
+            <option label="Sport">Sport</option>
+        </select>
       </div>
       </div>
-      <div><a href="#">поиск...</a></div> 
+      <div class="link"><a class="search_link" href="#">поиск...</a></div> 
     </section>
-
-    
+  
     <section class="search_tires">
-      <div>
+      <div class="search_tires_container">
       <p>Поиск шин</p>
       <div class="clearfix">
       <label>Размер</label>
-        <select name="size1"><option label="145">145</option></select>
+        <select name="size1">
+            <option label="145">145</option>
+            <option label="185">185</option>
+            <option label="195">195</option>
+        </select>
         <span>/</span>
-        <select name="size2"><option label=" "></option></select>
+        <select name="size2">
+            <option label="70">70</option>
+            <option label="60">60</option>
+            <option label="50">50</option>
+        </select>
       <label>R</label>
-        <select name="R"><option label="12">12</option></select>
+        <select name="R">
+            <option label="13">13</option>
+            <option label="14">14</option>
+            <option label="15">15</option>
+        </select>
       </div>
       <div class="season">
       <label>Сезон</label>
@@ -124,10 +160,9 @@
       </form>
       </div>
       </div>
-      <div><a href="#">поиск...</a></div>
+      <div class="link"><a class="search_link" href="#">поиск...</a></div>
     </section>
     
-
     <section class="search_disk clearfix">
      <div class="search_disk_box">
        <p>Поиск Дисков</p>
@@ -137,19 +172,39 @@
           <label>Диаметр <span>расположения крепёжных отверстий</span></label>
        </div>
        <div class="form_disk_box_input">
-         <select name="diametr1"><option label="14">14</option></select>
-         <select name="quantity" class="select_two"><option label="3">3</option></select>
-         <select name="diametr2"><option label="12">12</option></select>
+        <select name="diametr1">
+            <option label="14">14</option>
+            <option label="15">15</option>
+            <option label="16">16</option>
+        </select>
+        <select name="quantity" class="select_two">
+            <option label="3">3</option>
+            <option label="4">4</option>
+            <option label="5">5</option>
+        </select>
+        <select name="diametr2">
+            <option label="12">12</option>
+            <option label="13">13</option>
+            <option label="14">14</option>
+        </select>
        </div>  
       </div>
     
       <div class="form_disk_sbox_input">
     <label>ДЦО <span>(диаметр крепёжных отверстий)</span></label>
-        <select name="dco"><option label="12">12</option></select>
+        <select name="dco">
+            <option label="12">12</option>
+            <option label="13">13</option>
+            <option label="14">14</option>
+        </select>
     <label>ЕТ <span>вылет диска</span></label>
-        <select name="et"><option label="12">12</option></select>
+        <select name="et">
+            <option label="12">12</option>
+            <option label="13">13</option>
+            <option label="14">14</option>
+        </select>
       </div>
-    <a href="#">поиск...</a> 
+    <a class="search_link" href="#">поиск...</a> 
     </section>
   </div>
 
@@ -179,7 +234,7 @@
      </ul>
     </aside>
     <aside class="sidebar_right">
-      <p class="colect_icon">БРЕНДИ</p><br>
+      <p class="colect_icon">БРЕНДИ</p>
      <form action="#">
      <fieldset>
      <legend class="circle_icon">ШИНЫ:</legend>
@@ -253,7 +308,14 @@
       </a>
     </main>
     <div class="brend">
-     <img src="img/brend.png" alt="brend"> 
+      <img src="img/brand_logo1.png" alt="logo1">
+      <img src="img/brand_logo2.png" alt="logo2">
+      <img src="img/brand_logo3.png" alt="logo3">
+      <img src="img/brand_logo4.png" alt="logo4">
+      <img src="img/brand_logo5.png" alt="logo5">
+      <img src="img/brand_logo6.png" alt="logo6">
+      <img src="img/brand_logo7.png" alt="logo7">
+      <img src="img/brand_logo8.png" alt="logo8">  
     </div>
   </div>
   
@@ -261,16 +323,15 @@
     <div class="bottom_menu">
     <nav>
       <ul>
-        <li><a href="#">О компании</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Статьи</a></li>
-        <li><a class="contacts" href="#">Контакты</a></li>
+        <li class="about_company"><a href="#">О компании</a></li>
+        <li class="delivery"><a href="#">Доставка</a></li>
+        <li class="articles"><a href="#">Статьи</a></li>
+        <li class="contacts"><a href="#">Контакты</a></li>
       </ul>
     </nav>
     </div>
     <div class="author">Создание сайта &copy Global Vision</div>
-  </footer>
-  
-
+  </footer>  
+</div>
 </body>
 </html>
