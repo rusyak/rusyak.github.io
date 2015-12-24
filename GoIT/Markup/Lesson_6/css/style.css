@@ -79,7 +79,7 @@ input[type="password"] {
   padding-left: 4px;
   border-radius: 1px;
   margin-left: 4px;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 input[type="submit"] {
   border: none;
@@ -121,21 +121,23 @@ input[type="submit"] {
   box-shadow:0px 0px 9px #C1C1C1;
   line-height: 14px;
   margin-left: 11px;
-  padding: 3px 15px;
+  padding: 3px 10px;
   margin-top: -6px;
   overflow: hidden;
 }
 .icon .home {
-  margin-left: -6px;
   margin-top: -3px;
+  vertical-align: baseline;
 }
 .icon .map {
-  margin-left: 3px;
+  padding-left: 4px;
   margin-top: -5px;
+  vertical-align: baseline;
 }
 .icon .envelope {
-  margin-left: 4px;
+  padding-left: 4px;
   margin-top: -4px;
+  vertical-align: baseline;
 }
 .banner img {
   display: block;
@@ -235,19 +237,29 @@ input[type="submit"] {
 select {
   font-size: 11px;
 }
-.search_link {
-  color: #154467;
+input.search_link { 
+  float: right; 
+  font-style: italic; 
+  line-height: 16px; 
+  font-size: 13px; 
+  margin-right: 15px; 
+  text-decoration: underline; 
+  background: none; 
+  color: #154467; 
+  border: none;
 }
 .search_auto {
   float: left;
-  position: relative;
   width: 409px;
   height: 150px;
   border: 1px solid grey;
   border-radius: 20px;
   box-shadow:3px 4px 9px #848484;
 }
-.search_auto>p {
+.search_auto form {
+  position: relative;
+}
+.search_auto form>p {
   position: absolute;
   left: 34%;
   font-size: 12px;
@@ -331,15 +343,25 @@ select {
 .search_tires label {
   text-align: right;
 }
-.season form {
+.season label {
   font-size: 11px;
   line-height: 20px;
+}
+.season_check {
+  float: left;
+  font-size: 11px;
+  margin-top: 5px;
+  margin-bottom: 7px;
 }
 .search_tires p {
   margin-left: 10px;
   font-size: 12px;
   font-weight: bold;
   color: #154467;
+}
+.search_tires .search_link {
+  margin-top: -1px;
+  margin-right: 5px;
 }
 .search_disk {
   float: left;
@@ -349,6 +371,9 @@ select {
   border: 1px solid grey;
   border-radius: 20px;
   box-shadow:3px 4px 9px #848484;
+}
+.search_disk form {
+  width: 268px;
 }
 .search_disk_box {
   width: 150px;
@@ -401,6 +426,9 @@ select {
 .form_disk_sbox_input select {
   width: 57px;
 }
+.search_disk .search_link {
+  margin-top: -5px;
+} 
 /*SELECT*/
 
 /*CONTENT*/

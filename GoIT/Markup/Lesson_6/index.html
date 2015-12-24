@@ -50,7 +50,7 @@
   
   <div class="search_forms clearfix">
     <section class="search_auto">
-      
+      <form action="#">
       <p>Поиск по автомобилю</p>
       <div class="wheels">
         <span class="disk">Диски</span>
@@ -125,10 +125,12 @@
         </select>
       </div>
       </div>
-      <div class="link"><a class="search_link" href="#">поиск...</a></div> 
+      <input class="search_link" type="submit" value="поиск...">
+      </form> 
     </section>
   
     <section class="search_tires">
+    <form action="#">
       <div class="search_tires_container">
       <p>Поиск шин</p>
       <div class="clearfix">
@@ -153,17 +155,19 @@
       </div>
       <div class="season">
       <label>Сезон</label>
-      <form action="#">
-        <input type="checkbox"> лето<br>
-        <input type="checkbox"> зима<br>
-        <input type="checkbox"> всесез<br>
+        <div class="season_check">
+          <input type="checkbox"> лето<br>
+          <input type="checkbox"> зима<br>
+          <input type="checkbox"> всесез<br>
+        </div>
+      </div>
+      </div>
+      <input class="search_link" type="submit" value="поиск...">
       </form>
-      </div>
-      </div>
-      <div class="link"><a class="search_link" href="#">поиск...</a></div>
     </section>
     
     <section class="search_disk clearfix">
+    <form action="#">
      <div class="search_disk_box">
        <p>Поиск Дисков</p>
        <div class="form_disk_box">
@@ -204,7 +208,8 @@
             <option label="14">14</option>
         </select>
       </div>
-    <a class="search_link" href="#">поиск...</a> 
+    <input class="search_link" type="submit" value="поиск...">
+    </form> 
     </section>
   </div>
 
@@ -241,7 +246,7 @@
        <label><input type="checkbox">Бренд 1</label><br>
        <label><input type="checkbox">Бренд 2</label><br>
        <label><input type="checkbox">Бренд 3</label><br>
-     </fieldset><br>
+     </fieldset>
      <fieldset>
      <legend class="circle_icon">ДИСКИ:</legend>
        <label><input type="checkbox">Бренд 1</label><br>
