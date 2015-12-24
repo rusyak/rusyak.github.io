@@ -62,7 +62,7 @@ input[type="text"] {
   padding-left: 4px;
   border-radius: 1px;
   margin-left: -5px;
-  margin-top: -4px;
+  margin-top: -2px;
 }
 .enter>form:before {
   content: url(../img/login.png);
@@ -360,7 +360,7 @@ input.search_link {
   color: #154467;
 }
 .search_tires .search_link {
-  margin-top: -1px;
+  margin-top: -2px;
   margin-right: 5px;
 }
 .search_disk {
