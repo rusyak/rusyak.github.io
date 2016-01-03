@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+form {
+  width: 50%;
+  margin: 20px auto;
+}
+fieldset {
+  padding: 20px;
+}
+label {
+  display: inline-block; 
+  width: 5em;
+}
+fieldset div {
+  margin-bottom: 10px;
+  padding: 5px
+}
+.firstname,
+.lastname,
+.address {
+  margin-left: 20px;
+  border: 1px solid black;
+  border-radius: 3px;
+  box-shadow: 0px 0px 3px #000000;
+  font-size: 14px;
+  display: inline-block;
+  padding: 5px;
+}
