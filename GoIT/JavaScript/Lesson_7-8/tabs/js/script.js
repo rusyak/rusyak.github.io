@@ -2,42 +2,28 @@ $(function() {
 
   $('.item1 a').click(
     function(e) {
-      $('.text_item1 p').show('slow');
-      $('.text_item2 p').hide();
-      $('.text_item3 p').hide();
-      
-      $('.text_item1 p').css({
-        color: 'white',
-        background: 'green'
-      });
-      
+      $('p').hide();
+      $('.text_item1 p').show('slow').addClass('active');
+      $(this).addClass('active');
+      $('.item2 a, .item3 a').removeClass('active');
       e.preventDefault();
     });
 
   $('.item2 a').click(
     function(e) {
-      $('.text_item2 p').show('slow');
-      $('.text_item3 p').hide();
-      $('.text_item1 p').hide();
-      
-      $('.text_item2 p').css({
-        color: 'white',
-        background: 'red'
-      });
-      
+      $('p').hide();
+      $('.text_item2 p').show('slow').addClass('active');
+      $(this).addClass('active');
+      $('.item1 a, .item3 a').removeClass('active');      
       e.preventDefault();
     });
+  
   $('.item3 a').click(
     function(e) {
-      $('.text_item3 p').show('slow');
-      $('.text_item1 p').hide();
-      $('.text_item2 p').hide();
-      
-      $('.text_item3 p').css({
-        color: 'white',
-        background: 'blue'
-      });
-      
+      $('p').hide();
+      $('.text_item3 p').show('slow').addClass('active');
+      $(this).addClass('active');
+      $('.item1 a, .item2 a').removeClass('active');     
       e.preventDefault();
     });
 
