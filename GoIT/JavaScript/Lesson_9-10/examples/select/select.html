@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Select</title>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/sunny/jquery-ui.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	
+	<div class="button_back">
+        <a href="../../index.html"><span>Назад</span></a>
+    </div>
+	
+	<div class="wrapper">
+		<label for="selected_car">Выбрать машину</label>
+		<select name="car" id="selected_car">
+			<option selected="selected" value="Audi">Audi</option>
+			<option value="BMW">BMW</option>
+			<option value="Suzuki">Suzuki</option>
+			<option value="Subaru">Subaru</option>
+			<option value="Volvo">Volvo</option>
+		</select>
+
+		<label for="selected_transport">Выбрать транспорт</label>
+		<select name="transport" id="selected_transport">
+			<optgroup label="Легковые">
+				<option value="BMW">BMW</option>
+				<option value="Suzuki">Suzuki</option>
+				<option value="Subaru">Subaru</option>
+				<option value="Volvo">Volvo</option>
+			</optgroup>
+			<optgroup label="Мото">
+				<option value="BMW">BMW</option>
+				<option value="Honda">Honda</option>
+				<option value="Suzuki">Suzuki</option>
+			</optgroup>
+		</select>	
+	</div>
+</body>
+</html>
