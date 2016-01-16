@@ -1,18 +1,18 @@
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 .wrapper {
-	width: 300px;
-	margin: 100px auto;
-	font-family: Arial, Helvetica, sans-serif;
+    width: 300px;
+    margin: 100px auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 label {
-	display: block;
-	margin: 30px 0 0 0;
+    display: block;
+    margin: 30px 0 0 0;
 }
 select {
-	width: 200px;
+    width: 200px;
 }
 .button_back {
     margin-top: 10px;
@@ -21,9 +21,10 @@ select {
 .button_back a {
     display: inline-block;
     margin: 0 auto;
-    
+
     -webkit-border-radius: 10px;
-    
+    border-radius: 10px;
+
     -webkit-box-shadow: 
     0px 3px rgba(128,128,128,1),
     0px 4px rgba(118,118,118,1),
@@ -32,19 +33,35 @@ select {
     0px 7px rgba(88,88,88,1),
     0px 8px rgba(78,78,78,1),
     0px 14px 6px -1px rgba(128,128,128,1);
-    
-    -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+
+    box-shadow: 
+    0px 3px rgba(128,128,128,1),
+    0px 4px rgba(118,118,118,1),
+    0px 5px rgba(108,108,108,1),
+    0px 6px rgba(98,98,98,1),
+    0px 7px rgba(88,88,88,1),
+    0px 8px rgba(78,78,78,1),
+    0px 14px 6px -1px rgba(128,128,128,1);
+
+    -webkit-transition: box-shadow .1s ease-in-out;
+    transition: box-shadow .1s ease-in-out;
 } 
 .button_back a span {
     background-color: #E8E8E8;
     background-image: 
+
     -webkit-gradient(
         linear, 
         left bottom, 
         left top, 
         color-stop(50%,rgba(255,255,255,0)), 
         color-stop(50%,rgba(255,255,255,0.3)), 
-        color-stop(100%,rgba(255,255,255,0.2))),
+        color-stop(100%,rgba(255,255,255,0.2)));
+    linear-gradient(left bottom, left top, 
+        color-stop(50%,rgba(255,255,255,0)), 
+        color-stop(50%,rgba(255,255,255,0.3)), 
+        color-stop(100%,rgba(255,255,255,0.2)));
+
     -webkit-gradient(
         linear, 
         left top, 
@@ -52,7 +69,13 @@ select {
         color-stop(0%,rgba(210,210,210,0.3)), 
         color-stop(20%,rgba(210,210,210,0)), 
         color-stop(80%,rgba(210,210,210,0)), 
-        color-stop(100%,rgba(210,210,210,0.3))),
+        color-stop(100%,rgba(210,210,210,0.3)));
+    linear-gradient(left top, right top, 
+        color-stop(0%,rgba(210,210,210,0.3)), 
+        color-stop(20%,rgba(210,210,210,0)), 
+        color-stop(80%,rgba(210,210,210,0)), 
+        color-stop(100%,rgba(210,210,210,0.3)));
+
     -webkit-gradient(
         linear, 
         left top, 
@@ -60,7 +83,13 @@ select {
         color-stop(0%,rgba(255,255,255,0)), 
         color-stop(20%,rgba(255,255,255,0.5)), 
         color-stop(80%,rgba(255,255,255,0.5)), 
-        color-stop(100%,rgba(255,255,255,0))),        
+        color-stop(100%,rgba(255,255,255,0)));
+    linear-gradient(left top, right top, 
+        color-stop(0%,rgba(255,255,255,0)), 
+        color-stop(20%,rgba(255,255,255,0.5)), 
+        color-stop(80%,rgba(255,255,255,0.5)), 
+        color-stop(100%,rgba(255,255,255,0)));        
+
     -webkit-gradient(
         linear, 
         0% 100%, 
@@ -71,12 +100,30 @@ select {
         color-stop(60%,#D2D2D1), 
         color-stop(60%,rgba(255,255,255,0)), 
         color-stop(100%,rgba(255,255,255,0)));
+    linear-gradient(0% 100%, 100% 0%, 
+        color-stop(0%,rgba(255,255,255,0)), 
+        color-stop(40%,rgba(255,255,255,0)), 
+        color-stop(40%,#D2D2D1), 
+        color-stop(60%,#D2D2D1), 
+        color-stop(60%,rgba(255,255,255,0)), 
+        color-stop(100%,rgba(255,255,255,0)));
+
     -webkit-box-shadow:
     0px -1px #fff, 
-    0px 1px 1px #FFFFFF; 
+    0px 1px 1px #FFFFFF;
+    box-shadow:
+    0px -1px #fff, 
+    0px 1px 1px #FFFFFF;
+
     -webkit-background-size: 100%, 100%, 100%, 4px 4px;
+    background-size: 100%, 100%, 100%, 4px 4px;
+
     -webkit-border-radius: 10px;
+    border-radius: 10px;
+
     -webkit-transition: -webkit-transform .1s ease-in-out;
+    transition: transform .1s ease-in-out;
+
     display: inline-block;
     padding: 5px 20px;
     color: #3A474D;
@@ -100,7 +147,17 @@ select {
     0px 7px rgba(88,88,88,1),
     0px 8px rgba(78,78,78,1),
     0px 10px 2px 0px rgba(128,128,128,.6);
+
+    box-shadow: 
+    0px 3px rgba(128,128,128,1),
+    0px 4px rgba(118,118,118,1),
+    0px 5px rgba(108,108,108,1),
+    0px 6px rgba(98,98,98,1),
+    0px 7px rgba(88,88,88,1),
+    0px 8px rgba(78,78,78,1),
+    0px 10px 2px 0px rgba(128,128,128,.6);
 }
 .button_back a:active span{
     -webkit-transform: translate(0, 5px);
+    transform: translate(0, 5px);
 }

@@ -4,38 +4,76 @@
   <meta charset="utf-8">
   <title>MENU</title>
   <link rel="stylesheet" href="css/style.css">
+  <link  href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,bold" rel="stylesheet" type="text/css" >
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
+ <script src="js/script.js"></script>
   </head>
 <body>
 
-<div class="button_back">
-  <a href="../../index.html"><span>Назад</span></a>
-</div>
+  <div class="button_back">
+    <a href="../../index.html"><span>Назад</span></a>
+  </div>
 
-<nav>
-  <ul class="menu">
-    <li><a href="#">Пункт 1</a></li>
-    <li><a href="#">Пункт 2</a></li>
-    <li class="active_submenu"><a href="#">Пункт 3</a>
-      <ul class="submenu">
-        <li><a href="#">Пункт 3.1</a></li>
-        <li><a href="#">Пункт 3.2</a></li>
-        <li class="active_sub_submenu"><a href="#">Пункт 3.3</a>
-          <ul class="sub_submenu">
-            <li><a href="#">Пункт 3.3.1</a></li>
-            <li><a href="#">Пункт 3.3.2</a></li>
-            <li><a href="#">Пункт 3.3.3</a></li>
-            <li><a href="#">Пункт 3.3.4</a></li>
-            <li><a href="#">Пункт 3.3.5</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Пункт 3.4</a></li>
-        <li><a href="#">Пункт 3.5</a></li>
-      </ul>
-    </li>
-    <li><a href="#">Пункт 4</a></li>
-    <li><a href="#">Пункт 5</a></li>
-  </ul>
-</nav>
+  <div class="wrapper">
+    <div class="css_menu">
+      <h1>CSS MENU</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Пункт 1</a></li>
+          <li><a href="#">Пункт 2</a></li>
+          <li class="active_submenu css_active"><a href="#">Пункт 3</a>
+            <ul class="submenu">
+              <li><a href="#">Пункт 3.1</a></li>
+              <li><a href="#">Пункт 3.2</a></li>
+              <li class="active_sub_submenu css_active_sub"><a href="#">Пункт 3.3</a>
+                <ul class="sub_submenu">
+                  <li><a href="#">Пункт 3.3.1</a></li>
+                  <li><a href="#">Пункт 3.3.2</a></li>
+                  <li><a href="#">Пункт 3.3.3</a></li>
+                  <li><a href="#">Пункт 3.3.4</a></li>
+                  <li><a href="#">Пункт 3.3.5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Пункт 3.4</a></li>
+              <li><a href="#">Пункт 3.5</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Пункт 4</a></li>
+          <li><a href="#">Пункт 5</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="jquery_menu">
+      <h1>JQUERY MENU</h1>
+      <nav>
+        <ul class="menu jquery_nav_menu">
+          <li><a href="#">Пункт 1</a></li>
+          <li><a href="#">Пункт 2</a></li>
+          <li class="active_submenu active_jquery"><a href="#">Пункт 3</a>
+            <ul class="submenu">
+              <li><a href="#">Пункт 3.1</a></li>
+              <li><a href="#">Пункт 3.2</a></li>
+              <li class="active_sub_submenu active_jquery"><a href="#">Пункт 3.3</a>
+                <ul class="sub_submenu">
+                  <li><a href="#">Пункт 3.3.1</a></li>
+                  <li><a href="#">Пункт 3.3.2</a></li>
+                  <li><a href="#">Пункт 3.3.3</a></li>
+                  <li><a href="#">Пункт 3.3.4</a></li>
+                  <li><a href="#">Пункт 3.3.5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Пункт 3.4</a></li>
+              <li><a href="#">Пункт 3.5</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Пункт 4</a></li>
+          <li><a href="#">Пункт 5</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 
 </body>
 </html>

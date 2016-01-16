@@ -1,29 +1,29 @@
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 .css_box,
 .jquery_box {
-	width: 300px;
-	margin: 50px auto;
-	border: 2px solid black;
-	border-radius: 20px;
+    width: 300px;
+    margin: 50px auto;
+    border: 2px solid black;
+    border-radius: 20px;
 }
 .css_box p,
 .jquery_box p {
-	text-align: center;
-	font-weight: bold;
-	font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
 }
 .css_box label,
 .jquery_box label {
-	display: block;
-	margin: 20px;
-	cursor: pointer;
+    display: block;
+    margin: 20px;
+    cursor: pointer;
 }
 .css_box label input {
-	margin-left: 10px;
-	cursor: pointer;
+    margin-left: 10px;
+    cursor: pointer;
 }
 .icheckbox_minimal-green {
     display: inline-block;
@@ -39,20 +39,20 @@
 }
 
 .icheckbox_minimal-green {
-	background-position: 0 0;
+    background-position: 0 0;
 }
 .icheckbox_minimal-green.hover {
-	background-position: -20px 0;
+    background-position: -20px 0;
 }
 .icheckbox_minimal-green.checked {
-	background-position: -40px 0;
+    background-position: -40px 0;
 }
 .icheckbox_minimal-green.disabled {
-	background-position: -60px 0;
-	cursor: default;
+    background-position: -60px 0;
+    cursor: default;
 }
 .icheckbox_minimal-green.checked.disabled {
-	background-position: -80px 0;
+    background-position: -80px 0;
 }
 .button_back {
     margin-top: 10px;
@@ -61,9 +61,10 @@
 .button_back a {
     display: inline-block;
     margin: 0 auto;
-    
+
     -webkit-border-radius: 10px;
-    
+    border-radius: 10px;
+
     -webkit-box-shadow: 
     0px 3px rgba(128,128,128,1),
     0px 4px rgba(118,118,118,1),
@@ -72,19 +73,35 @@
     0px 7px rgba(88,88,88,1),
     0px 8px rgba(78,78,78,1),
     0px 14px 6px -1px rgba(128,128,128,1);
-    
-    -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+
+    box-shadow: 
+    0px 3px rgba(128,128,128,1),
+    0px 4px rgba(118,118,118,1),
+    0px 5px rgba(108,108,108,1),
+    0px 6px rgba(98,98,98,1),
+    0px 7px rgba(88,88,88,1),
+    0px 8px rgba(78,78,78,1),
+    0px 14px 6px -1px rgba(128,128,128,1);
+
+    -webkit-transition: box-shadow .1s ease-in-out;
+    transition: box-shadow .1s ease-in-out;
 } 
 .button_back a span {
     background-color: #E8E8E8;
     background-image: 
+
     -webkit-gradient(
         linear, 
         left bottom, 
         left top, 
         color-stop(50%,rgba(255,255,255,0)), 
         color-stop(50%,rgba(255,255,255,0.3)), 
-        color-stop(100%,rgba(255,255,255,0.2))),
+        color-stop(100%,rgba(255,255,255,0.2)));
+    linear-gradient(left bottom, left top, 
+        color-stop(50%,rgba(255,255,255,0)), 
+        color-stop(50%,rgba(255,255,255,0.3)), 
+        color-stop(100%,rgba(255,255,255,0.2)));
+
     -webkit-gradient(
         linear, 
         left top, 
@@ -92,7 +109,13 @@
         color-stop(0%,rgba(210,210,210,0.3)), 
         color-stop(20%,rgba(210,210,210,0)), 
         color-stop(80%,rgba(210,210,210,0)), 
-        color-stop(100%,rgba(210,210,210,0.3))),
+        color-stop(100%,rgba(210,210,210,0.3)));
+    linear-gradient(left top, right top, 
+        color-stop(0%,rgba(210,210,210,0.3)), 
+        color-stop(20%,rgba(210,210,210,0)), 
+        color-stop(80%,rgba(210,210,210,0)), 
+        color-stop(100%,rgba(210,210,210,0.3)));
+
     -webkit-gradient(
         linear, 
         left top, 
@@ -100,7 +123,13 @@
         color-stop(0%,rgba(255,255,255,0)), 
         color-stop(20%,rgba(255,255,255,0.5)), 
         color-stop(80%,rgba(255,255,255,0.5)), 
-        color-stop(100%,rgba(255,255,255,0))),        
+        color-stop(100%,rgba(255,255,255,0)));
+    linear-gradient(left top, right top, 
+        color-stop(0%,rgba(255,255,255,0)), 
+        color-stop(20%,rgba(255,255,255,0.5)), 
+        color-stop(80%,rgba(255,255,255,0.5)), 
+        color-stop(100%,rgba(255,255,255,0)));        
+
     -webkit-gradient(
         linear, 
         0% 100%, 
@@ -111,12 +140,30 @@
         color-stop(60%,#D2D2D1), 
         color-stop(60%,rgba(255,255,255,0)), 
         color-stop(100%,rgba(255,255,255,0)));
+    linear-gradient(0% 100%, 100% 0%, 
+        color-stop(0%,rgba(255,255,255,0)), 
+        color-stop(40%,rgba(255,255,255,0)), 
+        color-stop(40%,#D2D2D1), 
+        color-stop(60%,#D2D2D1), 
+        color-stop(60%,rgba(255,255,255,0)), 
+        color-stop(100%,rgba(255,255,255,0)));
+
     -webkit-box-shadow:
     0px -1px #fff, 
-    0px 1px 1px #FFFFFF; 
+    0px 1px 1px #FFFFFF;
+    box-shadow:
+    0px -1px #fff, 
+    0px 1px 1px #FFFFFF;
+
     -webkit-background-size: 100%, 100%, 100%, 4px 4px;
+    background-size: 100%, 100%, 100%, 4px 4px;
+
     -webkit-border-radius: 10px;
+    border-radius: 10px;
+
     -webkit-transition: -webkit-transform .1s ease-in-out;
+    transition: transform .1s ease-in-out;
+
     display: inline-block;
     padding: 5px 20px;
     color: #3A474D;
@@ -140,7 +187,17 @@
     0px 7px rgba(88,88,88,1),
     0px 8px rgba(78,78,78,1),
     0px 10px 2px 0px rgba(128,128,128,.6);
+
+    box-shadow: 
+    0px 3px rgba(128,128,128,1),
+    0px 4px rgba(118,118,118,1),
+    0px 5px rgba(108,108,108,1),
+    0px 6px rgba(98,98,98,1),
+    0px 7px rgba(88,88,88,1),
+    0px 8px rgba(78,78,78,1),
+    0px 10px 2px 0px rgba(128,128,128,.6);
 }
 .button_back a:active span{
     -webkit-transform: translate(0, 5px);
+    transform: translate(0, 5px);
 }
