@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'league_gothicregular';
-    src: url('../fonts/leaguegothic-regular-webfont.eot');
-    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
-         url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
-         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'league_gothicregular';
+	src: url('../fonts/leaguegothic-regular-webfont.eot');
+	src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+	url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+	url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 * {
 	margin: 0;
@@ -46,9 +46,9 @@ header {
 .head_nav_menu {
 	float: right;
 	text-align: right;
-    list-style: none;
-    width: 806px;
-    font-size: 24px;
+	list-style: none;
+	width: 806px;
+	font-size: 24px;
 }
 .head_nav_menu li {
 	display: inline-block;
@@ -119,7 +119,7 @@ header {
 
 .head_nav_submenu .head_nav_submenu_item:first-child .submenu_link {
 	border-radius: 10px 10px 0 0;
-	 border-top-left-radius: 10px; 
+	border-top-left-radius: 10px; 
 	line-height: 45px;
 }
 
@@ -162,12 +162,12 @@ header {
 	display: block;
 	position: absolute;
 	border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    width: 11px;
-    height: 11px;
-    margin-top: -5.5px;
-    margin-left: -5.5px;
+	top: 50%;
+	left: 50%;
+	width: 11px;
+	height: 11px;
+	margin-top: -5.5px;
+	margin-left: -5.5px;
 }
 .nav_menu_switchover li a:hover {
 	background-color: #ececec;
@@ -185,12 +185,12 @@ header {
 .left_icon {
 	float: left;
 	line-height: 400px;
-    padding-top: 13px;
+	padding-top: 13px;
 }
 .right_icon {
 	float: right;
 	line-height: 400px;
-    padding-top: 13px;
+	padding-top: 13px;
 }
 .left_icon a,
 .right_icon a {
@@ -213,7 +213,7 @@ header {
 	color: white;
 	text-transform: capitalize;
 	line-height: 48px;
-    letter-spacing: 0.1px;
+	letter-spacing: 0.1px;
 }
 .mobile_text_item2 {
 	display: block;
@@ -237,25 +237,22 @@ header {
 
 /*MAIN*/
 main {
-	height: 1345px;
-	border-top: 1px solid #33253a;
 	margin-top: -22px;
 }
 .about {
 	height: 340px;
-	border-top: 1px solid #0d151b;
 	/* IE10+ */ 
-    background-image: -ms-linear-gradient(top, #745083 0%, #33253a 100%);
-    /* Mozilla Firefox */ 
-    background-image: -moz-linear-gradient(top, #745083 0%, #33253a 100%);
-    /* Opera */ 
-    background-image: -o-linear-gradient(top, #745083 0%, #33253a 100%);
-    /* Webkit (Safari/Chrome 10) */ 
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #745083), color-stop(100, #33253a));
-    /* Webkit (Chrome 11+) */ 
-    background-image: -webkit-linear-gradient(top, #745083 0%, #33253a 100%);
-    /* W3C Markup */ 
-    background-image: linear-gradient(to bottom, #745083 0%, #33253a 100%);
+	background-image: -ms-linear-gradient(top, #745083 0%, #33253a 100%);
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, #745083 0%, #33253a 100%);
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, #745083 0%, #33253a 100%);
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #745083), color-stop(100, #33253a));
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, #745083 0%, #33253a 100%);
+	/* W3C Markup */ 
+	background-image: linear-gradient(to bottom, #745083 0%, #33253a 100%);
 }
 .about_box,
 .blog_box,
@@ -276,10 +273,10 @@ main {
 }
 .about_box_text {
 	background: url(../img/spritesheet.png) no-repeat;
-    background-position: -70px 0px;
-    color: white;
-    box-sizing: border-box;
-    padding-left: 33px;
+	background-position: -70px 0px;
+	color: white;
+	box-sizing: border-box;
+	padding-left: 33px;
 }
 .about_box_text--icon_blog {
 	background: url(../img/spritesheet.png) no-repeat;
@@ -304,77 +301,80 @@ main {
 
 .about_box1 {
 	margin-top: 84px;
-    margin-right: 59px;
+	margin-right: 59px;
 }
 .title_box1 {
 	margin-left: 19px;
-    font-size: 29px;
-    line-height: 12px;
+	font-size: 29px;
+	line-height: 12px;
 }
 .text_box1 {
 	font-size: 16px;
-    line-height: 19px;
-    margin-left: 25px;
-    margin-top: 21px;
-    font-family: 'Open Sans', sans-serif;
+	line-height: 19px;
+	margin-left: 25px;
+	margin-top: 21px;
+	font-family: 'Open Sans', sans-serif;
 }
 .about_box_read--box1 {
 	font-size: 18px;
-    margin-top: 20px;
-    margin-right: 12px;
+	margin-top: 20px;
+	margin-right: 12px;
 }
 
 .about_box2 {
 	margin-top: 86px;
-    margin-right: 62px;
+	margin-right: 62px;
 }
 .title_box2 {
 	font-size: 30px;
-    line-height: 10px;
-    margin-left: 20px;
+	line-height: 10px;
+	margin-left: 20px;
 }
 .text_box2 {
 	margin-top: 20px;
-    font-size: 16px;
-    margin-left: 24px;
-    line-height: 19px;
-    font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin-left: 24px;
+	line-height: 19px;
+	font-family: 'Open Sans', sans-serif;
 }
 .about_box_read--box2 {
 	font-size: 18px;
-    margin-top: 20px;
-    margin-right: 6px;
+	margin-top: 20px;
+	margin-right: 6px;
 }
 
 
 .about_box3 {
 	margin-top: 83px;
-    width: 271px;
+	width: 271px;
 }
 .about_box_text--icon_music {
 	padding-left: 53px;
 }
 .title_box3 {
 	font-size: 30px;
-    line-height: 14px;
+	line-height: 14px;
 }
 .text_box3 {
 	font-size: 16px;
-    letter-spacing: 0px;
-    line-height: 19px;
-    margin-top: 17px;
-    font-family: 'Open Sans', sans-serif;
+	letter-spacing: 0px;
+	line-height: 19px;
+	margin-top: 17px;
+	font-family: 'Open Sans', sans-serif;
 }
 .about_box_read--box3 {
 	margin-top: 23px;
-    margin-right: 2px;
-    font-size: 18px;
+	margin-right: 2px;
+	font-size: 18px;
 }
 
 
 .blog {
 	height: 485px;
 	background-color: #f9f9f9;
+	-webkit-box-shadow: inset 0px 11px 14px -11px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 11px 14px -11px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 11px 14px -11px rgba(0,0,0,0.75);
 }
 .blog_box_message {
 	float: left;
@@ -413,9 +413,9 @@ main {
 }
 .nav_menu--modify {	
 	display: block;
-    clear: both;
-    margin-left: 22px;
-    width: 428px;
+	clear: both;
+	margin-left: 22px;
+	width: 428px;
 }
 .nav_menu_switchover--modify li {
 	background-color: #fff;
@@ -434,12 +434,12 @@ main {
 	width: 440px;
 	height: 268px;
 	margin-top: 127px;
-    margin-right: 13px;
+	margin-right: 13px;
 }
 .blog_box_comment p {
 	text-transform: uppercase;
-    font-size: 30px;
-    padding-left: 3px;
+	font-size: 30px;
+	padding-left: 3px;
 }
 .blog_box_comment_item1,
 .blog_box_comment_item2,
@@ -453,47 +453,47 @@ main {
 }
 .blog_box_comment_title1 {
 	margin-top: 16px;
-    font-weight: bold;
-    font-size: 17px;
-	
+	font-weight: bold;
+	font-size: 17px;
+
 }
 .blog_box_comment_text1 {
 	font-size: 15px;
-    margin-top: 5px;
+	margin-top: 5px;
 }
 .blog_box_comment_title2 {
 	font-size: 17px;
-    font-weight: bold;
-    margin-top: 24px;
+	font-weight: bold;
+	margin-top: 24px;
 }
 .blog_box_comment_text2 {
 	font-size: 15px;
-    margin-top: 4px;
+	margin-top: 4px;
 }
 .blog_box_comment_title3 {
 	font-size: 17px;
-    font-weight: bold;
-    margin-top: 22px;
+	font-weight: bold;
+	margin-top: 22px;
 }
 .blog_box_comment_text3 {
 	font-size: 15px;
-    margin-top: 6px;
+	margin-top: 6px;
 }
 .blog_box_comment_icon1,
 .blog_box_comment_icon2,
 .blog_box_comment_icon3 {
 	position: absolute;
 	top: -4px;
-    left: 3px;
+	left: 3px;
 }
 .blog_box_comment .about_box_read--box_comment {
 	font-size: 18px;
-    line-height: 24px;
-    padding-right: 8px;
-    padding-top: 23px;
+	line-height: 24px;
+	padding-right: 8px;
+	padding-top: 23px;
 }
 .blog_box_comment .about_box_read--box_comment a {
-    color: black;
+	color: black;
 }
 
 .products {
@@ -534,45 +534,45 @@ main {
 }
 .copyright_box_column1_author {
 	margin-top: 61px;
-    font-family: Georgia, serif;
-    font-style: italic;
-    font-size: 16px;
+	font-family: Georgia, serif;
+	font-style: italic;
+	font-size: 16px;
 }
 .copyright_box_column1_text1 {
 	margin-top: 13px;
-    font-family: "Open Sans", sans-serif;
-    font-size: 17px;
-    line-height: 24px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 17px;
+	line-height: 24px;
 }
 .copyright_box_column2 {
 	margin-top: 94px;
-    margin-left: 53px;
+	margin-left: 53px;
 }
 .copyright_box_column2_title1 {
 	font-size: 30px;
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
 .copyright_box_column2_text2 {
 	margin-top: 8px;
-    font-size: 17px;
-    line-height: 24px;
-    font-family: "Open Sans", sans-serif;
+	font-size: 17px;
+	line-height: 24px;
+	font-family: "Open Sans", sans-serif;
 }
 .copyright_box_column3 {
 	margin-top: 94px;
-    margin-left: 52px;
+	margin-left: 52px;
 }
 .copyright_box_column3_title2 {
 	text-transform: uppercase;
-    font-size: 30px;
-    padding-left: 3px;
+	font-size: 30px;
+	padding-left: 3px;
 }
 .copyright_box_column3_text3 {
 	font-size: 17px;
-    line-height: 24px;
-    font-family: "Open Sans", sans-serif;
-    margin-top: 6px;
-    padding-left: 3px;
+	line-height: 24px;
+	font-family: "Open Sans", sans-serif;
+	margin-top: 6px;
+	padding-left: 3px;
 }
 /*MAIN*/
 
@@ -582,6 +582,9 @@ footer {
 	background-position: center center;
 	background-size: cover;
 	height: 114px;
+	-webkit-box-shadow: 0px 2px 22px 4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 22px 4px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 22px 4px rgba(0,0,0,0.75);
 }
 .foot {
 	width: 960px;
@@ -590,13 +593,13 @@ footer {
 }
 .head_nav--footer {
 	padding: 0px;
-    margin: 0px;
-    display: inline-block;
+	margin: 0px;
+	display: inline-block;
 }
 .head_nav_menu--footer {
 	width: inherit;
-    font-size: 21px;
-    margin-top: 43px;
+	font-size: 21px;
+	margin-top: 43px;
 }
 .nav_menu_item1--footer,
 .nav_menu_item4--footer,
@@ -614,14 +617,14 @@ footer {
 }
 .footer_design {
 	float: right;
-    margin-top: 51px;
-    margin-right: 0;
-    font-family: "Open Sans", sans-serif;
-    font-size: 13px;
-    color: white;
+	margin-top: 51px;
+	margin-right: 0;
+	font-family: "Open Sans", sans-serif;
+	font-size: 13px;
+	color: white;
 }
 .footer_design span {
 	font-weight: bold;
-    font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", sans-serif;
 }
 /*FOOTER*/
