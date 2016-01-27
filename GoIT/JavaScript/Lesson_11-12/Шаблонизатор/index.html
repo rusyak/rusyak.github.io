@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>About me</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="js/tmpl.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+
+  <script type="text/template" id="about">
+    <div class="wrapper">
+      <h3><%= profile_name %></h3>
+      <div class="foto"><img src="<%= profile_image_url %>" alt="<%= profile_image_alt %>" title="<%= profile_image_title %>"></div>
+      <p><%= profile_job %></p>
+      <p class="line"><%= profile_dreams %></p>
+      <ul>
+        <li><%= profile_dream_1 %></li>
+        <li><%= profile_dream_2 %></li>
+        <li><%= profile_dream_3 %></li>
+      </ul>
+      <p>
+        <span class="line"><%= profile_contact_text %></span>
+        <span><%= profile_contact_number %></span>
+        <span><%= profile_vk_text %></span>
+        <span><a href="<%= profile_vk_link %>" target="_blank"><%= profile_vk_link_text %></a></span>
+        <span class="line"><%= profile_feedback %></span>
+        <span><%= profile_feedback_text %></span>
+      </p>
+    </div>
+  </script>
+
+  </body>
+  </html>
