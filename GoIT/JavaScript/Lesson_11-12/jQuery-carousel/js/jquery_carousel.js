@@ -3,8 +3,8 @@
 	$.fn.carousel = function(options) {
 
 		var defaults = {
-			widthHider: 600,
-			heightHider: 100,
+			widthHider: 900,
+			heightHider: 200,
 			showElem: 3
 		};
 
@@ -15,7 +15,8 @@
 		var $setShowElem = defaults.showElem;
 
 		$('.carousel-hider').innerWidth($setWidthHider).innerHeight($setHeightHider);
-
+		$('.carousel-element img').innerHeight($setHeightHider);
+		
 		var $left = $('.carousel-arrow-left');
 		var $right = $('.carousel-arrow-right');
 		var $elementsList = $('.carousel-list');
@@ -29,7 +30,7 @@
 			if ($currentLeftValue != $maximumOffset) {
 				$currentLeftValue += $widthImg;
 				$elementsList.animate({ left : $currentLeftValue + "px"}, 500);
-			}   
+			}
 		};
 
 		function rightMove() {
