@@ -155,13 +155,13 @@ header {
 	width: 17px;
 	height: 17px;
 	background-color: #3b3842;
-	border-radius: 50%;
+	border-radius: 10px;
 	margin-left: 5px;
 }
 .nav_menu_switchover li a {
 	display: block;
 	position: absolute;
-	border-radius: 50%;
+	border-radius: 10px;
 	top: 50%;
 	left: 50%;
 	width: 11px;
@@ -195,6 +195,10 @@ header {
 .left_icon a,
 .right_icon a {
 	display: block;
+}
+.left_icon a>img,
+.right_icon a>img {
+	border: 0;
 }
 .mobile {
 	width: 960px;
@@ -253,6 +257,7 @@ main {
 	background-image: -webkit-linear-gradient(top, #745083 0%, #33253a 100%);
 	/* W3C Markup */ 
 	background-image: linear-gradient(to bottom, #745083 0%, #33253a 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#745083', endColorstr='#33253a');/*For IE7-8-9*/
 }
 .about_box,
 .blog_box,
