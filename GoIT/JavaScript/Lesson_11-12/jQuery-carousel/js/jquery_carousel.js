@@ -31,18 +31,18 @@
 				$currentLeftValue += $widthImg;
 				$elementsList.animate({ left : $currentLeftValue + "px"}, 500);
 			}
-		};
+		}
 
 		function rightMove() {
 			if ($currentLeftValue != $minimumOffset) {
 				$currentLeftValue -= $widthImg;
 				$elementsList.animate({ left : $currentLeftValue + "px"}, 500);
 			}   
-		};
+		}
 
 		$left.on('click', leftMove);
 		$right.on('click', rightMove);
 
-}
+};
 
 })(jQuery);
