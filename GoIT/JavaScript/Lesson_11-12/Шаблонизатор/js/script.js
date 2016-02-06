@@ -1,7 +1,7 @@
 $(function(){
   
   var html = $('#about').html();
-  var content = {
+  var data = {
     profile_name: "Андрусяк Игорь Петрович",
     profile_image_url: "img/foto.png",
     profile_image_alt: "Фото Андрусяк Ігор",
@@ -20,7 +20,7 @@ $(function(){
     profile_feedback_text: "Готовый грызть гранит фронтенда:)"
   };
   
-  var content = tmpl(html, content);
+  var content = tmpl(html, data);
   $('body').append(content);
  
   
