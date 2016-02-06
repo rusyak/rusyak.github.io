@@ -52,11 +52,11 @@ var app = {
         label.insertAdjacentElement('afterBegin', checkbox);
       }
 
-    };
+    }
 
   }
 
-}
+};
 
 
 
