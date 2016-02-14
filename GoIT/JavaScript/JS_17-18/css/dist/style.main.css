@@ -1,0 +1,13 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+div {
+	width: 400px;
+	margin: 100px auto;
+	text-align: center;
+}
+
+span {
+	font-size: 24px;
+}
