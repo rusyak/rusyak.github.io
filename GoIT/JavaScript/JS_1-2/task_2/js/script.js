@@ -1,14 +1,15 @@
-var a = prompt('Введите число', '');
-var n = prompt('Введите степень', '');
+var x = prompt('Введите целое число', '');
+var n = prompt('Введите целую степень', '');
 
-function pow(a, n) {
-    var b = a;
+function pow(x, n) {
+  if (n < 0) return NaN;
+  if (x === 0 && n === 0) return NaN;
+  if (Math.round(n) != n) return NaN;
 
-    for (var i = 1; i < n; i++) {
-        b *= a;
-    }
-
-    return b;
+  var result = 1;
+  for (var i = 0; i < n; i++) {
+    result *= x;
+  }
+  return result;
 }
-
-console.log(pow(a, n));
+console.log(pow(x, n));
