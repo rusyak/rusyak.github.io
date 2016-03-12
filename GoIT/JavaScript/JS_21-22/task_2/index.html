@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TEST</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/tmpl.js"></script>
+    <script src="js/dist/script.js"></script>
+</head>
+<body>
+
+    <div class="col-md-6 col-md-offset-3">
+        <h2 class="text-center">JavaScript test</h2>
+        <form class="form-block" id="formId">
+            <script type="text/template" id="template">
+                <% for (var i = 0; i < data.length; i++) { %>
+                <h4><strong><u><%= data[i].title %></u></strong></h4>
+                <div class="form-group">
+                    <label class="center-block"><input type="checkbox" id="<%= i+1 %>"><%= data[i].answers[0].answer %></label>
+                    <label class="center-block"><input type="checkbox" id="<%= i+1 %>"><%= data[i].answers[1].answer %></label>
+                    <label class="center-block"><input type="checkbox" id="<%= i+1 %>"><%= data[i].answers[2].answer %></label>
+                </div>
+                <% } %>
+            </script>
+            <button class="center-block btn btn-primary" id="check-results">Check my results!</button>
+        </form>
+    </div>
+
+</body>
+</html>
