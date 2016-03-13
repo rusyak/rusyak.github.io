@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;	
+}
+
+.wrapper {
+	width: 600px;
+	margin: 0 auto;
+	padding: 50px;
+}
+h2 {
+	text-align: center;
+}
+.item-list {
+	list-style: none;
+	padding: 20px;
+	text-align: center;
+}
+.item-list li .item-input {
+	width: 280px;
+	height: 30px;
+	border: 2px solid #2C3E50;
+	border-radius: 5px;
+	margin: 5px;
+	padding-left: 10px;
+}
+.item-list li .item-delete {
+	display: inline-block;
+	background: url("../img/icon-delete.png") 0 0 no-repeat;
+	width: 32px;
+	height: 32px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.item-list li .item-edit {
+	display: inline-block;
+	background: url("../img/icon-confirm.png") 0 0 no-repeat;
+	width: 32px;
+	height: 32px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.controlls {
+	text-align: center;
+}
+.controlls .item-value {
+	border: 2px solid #3A96D1;
+	border-radius: 5px;
+	width: 300px;
+	height: 40px;
+	margin: 5px;
+	padding-left: 10px;
+	
+}
+.controlls .item-add {
+	background: url("../img/icon-add.png") 0 0 no-repeat;
+	width: 48px;
+	height: 48px;
+	cursor: pointer;
+	border: none;
+	vertical-align: middle;
+}

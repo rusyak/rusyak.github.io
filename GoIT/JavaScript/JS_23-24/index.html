@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="js/tmpl.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+
+<script type="text/template" id="wrapper-template">
+	<div class="wrapper">
+		<h2>ToDo List</h2>
+		<ul class="item-list"></ul>
+		<div class="controlls">
+			<input type="text" class="item-value" placeholder="Write your next task">
+			<button class="item-add"></button>
+		</div>
+	</div>
+</script>
+
+	<script type="text/template" id="list-template">
+		<% for(var i = 0; i < data.length; i++) { %>
+			<li> <input class="item-input" type="text" name="" value=<%= data[i] %>> 
+				<span class="item-delete" data-value="<%= data[i] %>"></span>
+				<span class="item-edit"></span>
+			</li>
+		<% }; %>
+	</script>
+	
+</body>
+</html>
