@@ -222,23 +222,68 @@ body, html {
     .partners .gallery-item__photo {
       position: relative;
       margin: 22px 0 13px; }
-      .partners .gallery-item__photo .gallery-item__photo-icon {
-        position: absolute;
-        top: 87px;
-        left: 185px;
-        padding: 8px;
-        border: 3px solid white; }
-      .partners .gallery-item__photo .partner-icon1 {
-        background-color: #ff4e50; }
-      .partners .gallery-item__photo .partner-icon2 {
-        background-color: #ffa507; }
-      .partners .gallery-item__photo .partner-icon3 {
-        background-color: #1cd7ad; }
-      .partners .gallery-item__photo .partner-icon4 {
-        background-color: #4e73db; }
-      .partners .gallery-item__photo .gallery-item__photo-partner,
-      .partners .gallery-item__photo .gallery-item__photo-icon {
+      .partners .gallery-item__photo .gallery-item__photo-partner {
         border-radius: 50%; }
+      .partners .gallery-item__photo .photo-partner--1,
+      .partners .gallery-item__photo .photo-partner--2,
+      .partners .gallery-item__photo .photo-partner--3,
+      .partners .gallery-item__photo .photo-partner--4 {
+        width: 122px;
+        height: 122px;
+        margin: 0 auto;
+        position: relative; }
+      .partners .gallery-item__photo .photo-partner--1:after {
+        content: "";
+        position: absolute;
+        display: block;
+        background: url(../img/partner-icon1.png) center center no-repeat;
+        width: 20px;
+        height: 20px;
+        right: 0;
+        bottom: 0;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: #ff4e50; }
+      .partners .gallery-item__photo .photo-partner--2:after {
+        content: "";
+        position: absolute;
+        display: block;
+        background: url(../img/partner-icon2.png) center center no-repeat;
+        width: 20px;
+        height: 20px;
+        right: 0;
+        bottom: 0;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: #ffa507; }
+      .partners .gallery-item__photo .photo-partner--3:after {
+        content: "";
+        position: absolute;
+        display: block;
+        background: url(../img/partner-icon3.png) center center no-repeat;
+        width: 20px;
+        height: 20px;
+        right: 0;
+        bottom: 0;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: #1cd7ad; }
+      .partners .gallery-item__photo .photo-partner--4:after {
+        content: "";
+        position: absolute;
+        display: block;
+        background: url(../img/partner-icon4.png) center center no-repeat;
+        width: 20px;
+        height: 20px;
+        right: 0;
+        bottom: 0;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: #4e73db; }
     .partners .partners__button-find {
       display: block;
       width: 275px;
@@ -543,7 +588,8 @@ body, html {
     width: 30px;
     height: 56px;
     left: 10px;
-    margin-top: 42px; }
+    top: 50%;
+    margin-top: -28px; }
   .jcarousel .jcarousel-control-next {
     background-image: url(../img/arrow-right.png);
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/arrow-right.png', sizingMethod='scale');
@@ -552,7 +598,8 @@ body, html {
     width: 30px;
     height: 56px;
     right: 10px;
-    margin-top: 42px; }
+    top: 50%;
+    margin-top: -28px; }
 
   .partners {
     width: 100%;
@@ -598,25 +645,68 @@ body, html {
     .partners .gallery-item__photo {
       position: relative;
       margin: 22px 0 13px; }
-      .partners .gallery-item__photo .gallery-item__photo-icon {
-        position: absolute;
-        top: 87px;
-        left: 122px;
-        padding: 8px;
-        border: 3px solid white;
-        width: 18px;
-        height: 18px; }
-      .partners .gallery-item__photo .partner-icon1 {
-        background-color: #ff4e50; }
-      .partners .gallery-item__photo .partner-icon2 {
-        background-color: #ffa507; }
-      .partners .gallery-item__photo .partner-icon3 {
-        background-color: #1cd7ad; }
-      .partners .gallery-item__photo .partner-icon4 {
-        background-color: #4e73db; }
-      .partners .gallery-item__photo .gallery-item__photo-partner,
-      .partners .gallery-item__photo .gallery-item__photo-icon {
+      .partners .gallery-item__photo .gallery-item__photo-partner {
         border-radius: 50%; }
+      .partners .gallery-item__photo .photo-partner--1,
+      .partners .gallery-item__photo .photo-partner--2,
+      .partners .gallery-item__photo .photo-partner--3,
+      .partners .gallery-item__photo .photo-partner--4 {
+        width: 122px;
+        height: 122px;
+        margin: 0 auto;
+        position: relative; }
+      .partners .gallery-item__photo .photo-partner--1:after {
+        content: "";
+        position: absolute;
+        display: block;
+        background: url(../img/partner-icon1.png) center center no-repeat;
+        width: 20px;
+        height: 20px;
+        right: 0;
+        bottom: 0;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: #ff4e50; }
+      .partners .gallery-item__photo .photo-partner--2:after {
+        content: "";
+        position: absolute;
+        display: block;
+        background: url(../img/partner-icon2.png) center center no-repeat;
+        width: 20px;
+        height: 20px;
+        right: 0;
+        bottom: 0;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: #ffa507; }
+      .partners .gallery-item__photo .photo-partner--3:after {
+        content: "";
+        position: absolute;
+        display: block;
+        background: url(../img/partner-icon3.png) center center no-repeat;
+        width: 20px;
+        height: 20px;
+        right: 0;
+        bottom: 0;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: #1cd7ad; }
+      .partners .gallery-item__photo .photo-partner--4:after {
+        content: "";
+        position: absolute;
+        display: block;
+        background: url(../img/partner-icon4.png) center center no-repeat;
+        width: 20px;
+        height: 20px;
+        right: 0;
+        bottom: 0;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: #4e73db; }
     .partners .partners__button-find {
       display: block;
       width: 189px;
@@ -734,7 +824,7 @@ body, html {
     .footer .footer__partners {
       padding-left: 19px; }
     .footer .footer__webstudio {
-      padding-left: 26px; }
+      padding-left: 20px; }
     .footer .footer__logo-link {
       text-decoration: none;
       color: #ff4e50;
@@ -768,11 +858,11 @@ body, html {
       font-family: "Montserrat", serif;
       font-weight: 700;
       text-transform: uppercase;
-      margin-left: 50px;
+      margin-left: 30px;
       font-size: 12px; } }
 @media screen and (min-width: 1440px) {
   .wrapper {
-    width: 1440px;
+    width: 100%;
     margin: 0 auto; }
 
   .header {
@@ -1002,23 +1092,67 @@ body, html {
     .partners .gallery-item__photo {
       position: relative;
       margin: 22px 0 13px; }
-      .partners .gallery-item__photo .gallery-item__photo-icon {
-        position: absolute;
-        top: 87px;
-        left: 130px;
-        padding: 8px;
-        border: 3px solid white; }
-      .partners .gallery-item__photo .partner-icon1 {
-        background-color: #ff4e50; }
-      .partners .gallery-item__photo .partner-icon2 {
-        background-color: #ffa507; }
-      .partners .gallery-item__photo .partner-icon3 {
-        background-color: #1cd7ad; }
-      .partners .gallery-item__photo .partner-icon4 {
-        background-color: #4e73db; }
-      .partners .gallery-item__photo .gallery-item__photo-partner,
-      .partners .gallery-item__photo .gallery-item__photo-icon {
+      .partners .gallery-item__photo .gallery-item__photo-partner {
         border-radius: 50%; }
+      .partners .gallery-item__photo .photo-partner--1,
+      .partners .gallery-item__photo .photo-partner--2,
+      .partners .gallery-item__photo .photo-partner--3,
+      .partners .gallery-item__photo .photo-partner--4 {
+        width: 122px;
+        height: 122px;
+        position: relative; }
+      .partners .gallery-item__photo .photo-partner--1:after {
+        content: "";
+        position: absolute;
+        display: block;
+        background: url(../img/partner-icon1.png) center center no-repeat;
+        width: 20px;
+        height: 20px;
+        right: 0;
+        bottom: 0;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: #ff4e50; }
+      .partners .gallery-item__photo .photo-partner--2:after {
+        content: "";
+        position: absolute;
+        display: block;
+        background: url(../img/partner-icon2.png) center center no-repeat;
+        width: 20px;
+        height: 20px;
+        right: 0;
+        bottom: 0;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: #ffa507; }
+      .partners .gallery-item__photo .photo-partner--3:after {
+        content: "";
+        position: absolute;
+        display: block;
+        background: url(../img/partner-icon3.png) center center no-repeat;
+        width: 20px;
+        height: 20px;
+        right: 0;
+        bottom: 0;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: #1cd7ad; }
+      .partners .gallery-item__photo .photo-partner--4:after {
+        content: "";
+        position: absolute;
+        display: block;
+        background: url(../img/partner-icon4.png) center center no-repeat;
+        width: 20px;
+        height: 20px;
+        right: 0;
+        bottom: 0;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: #4e73db; }
     .partners .partners__button-find {
       display: block;
       width: 190px;
@@ -1122,6 +1256,9 @@ body, html {
     padding-bottom: 15px;
     border-top: 5px solid #ff4e50;
     font-size: 0; }
+    .footer .footer-wrap {
+      width: 1440px;
+      margin: 0 auto; }
     .footer div {
       display: inline-table; }
     .footer .footer__logo {
