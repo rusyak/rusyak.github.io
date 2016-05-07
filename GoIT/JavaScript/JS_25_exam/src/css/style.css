@@ -236,7 +236,7 @@ body, html {
         content: "";
         position: absolute;
         display: block;
-        background: url(../img/partner-icon1.png) center center no-repeat;
+        background: url(../../build/img/partner-icon1.png) center center no-repeat;
         width: 20px;
         height: 20px;
         right: 0;
@@ -249,7 +249,7 @@ body, html {
         content: "";
         position: absolute;
         display: block;
-        background: url(../img/partner-icon2.png) center center no-repeat;
+        background: url(../../build/img/partner-icon2.png) center center no-repeat;
         width: 20px;
         height: 20px;
         right: 0;
@@ -262,7 +262,7 @@ body, html {
         content: "";
         position: absolute;
         display: block;
-        background: url(../img/partner-icon3.png) center center no-repeat;
+        background: url(../../build/img/partner-icon3.png) center center no-repeat;
         width: 20px;
         height: 20px;
         right: 0;
@@ -275,7 +275,7 @@ body, html {
         content: "";
         position: absolute;
         display: block;
-        background: url(../img/partner-icon4.png) center center no-repeat;
+        background: url(../../build/img/partner-icon4.png) center center no-repeat;
         width: 20px;
         height: 20px;
         right: 0;
@@ -313,7 +313,9 @@ body, html {
       width: 320px;
       height: 130px;
       font-size: 0;
-      text-align: center; }
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 5px; }
       .ideas .grid--item .item--picture {
         display: inline-block;
         width: 300px;
@@ -326,10 +328,9 @@ body, html {
         font-size: 22px;
         line-height: 22px;
         font-weight: 700;
-        color: #fff;
+        color: #333333;
         position: relative;
-        margin-top: -80px;
-        margin-bottom: 80px; }
+        line-height: 132px; }
 
   .search {
     width: 100%;
@@ -659,7 +660,7 @@ body, html {
         content: "";
         position: absolute;
         display: block;
-        background: url(../img/partner-icon1.png) center center no-repeat;
+        background: url(../../build/img/partner-icon1.png) center center no-repeat;
         width: 20px;
         height: 20px;
         right: 0;
@@ -672,7 +673,7 @@ body, html {
         content: "";
         position: absolute;
         display: block;
-        background: url(../img/partner-icon2.png) center center no-repeat;
+        background: url(../../build/img/partner-icon2.png) center center no-repeat;
         width: 20px;
         height: 20px;
         right: 0;
@@ -685,7 +686,7 @@ body, html {
         content: "";
         position: absolute;
         display: block;
-        background: url(../img/partner-icon3.png) center center no-repeat;
+        background: url(../../build/img/partner-icon3.png) center center no-repeat;
         width: 20px;
         height: 20px;
         right: 0;
@@ -698,7 +699,7 @@ body, html {
         content: "";
         position: absolute;
         display: block;
-        background: url(../img/partner-icon4.png) center center no-repeat;
+        background: url(../../build/img/partner-icon4.png) center center no-repeat;
         width: 20px;
         height: 20px;
         right: 0;
@@ -743,7 +744,9 @@ body, html {
       height: 315px;
       font-size: 0;
       text-align: center;
-      display: inline-block; }
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 5px; }
       .ideas .grid--item .item--picture {
         display: inline-block;
         width: 235px;
@@ -756,9 +759,9 @@ body, html {
         font-size: 22px;
         line-height: 22px;
         font-weight: 700;
-        color: #fff;
+        color: #333333;
         position: relative;
-        margin-top: -166px; }
+        line-height: 317px; }
     .ideas .grid--item:nth-child(5) {
       width: 480px; }
       .ideas .grid--item:nth-child(5) .item--picture {
@@ -1100,12 +1103,13 @@ body, html {
       .partners .gallery-item__photo .photo-partner--4 {
         width: 122px;
         height: 122px;
+        margin: 0 auto;
         position: relative; }
       .partners .gallery-item__photo .photo-partner--1:after {
         content: "";
         position: absolute;
         display: block;
-        background: url(../img/partner-icon1.png) center center no-repeat;
+        background: url(../../build/img/partner-icon1.png) center center no-repeat;
         width: 20px;
         height: 20px;
         right: 0;
@@ -1118,7 +1122,7 @@ body, html {
         content: "";
         position: absolute;
         display: block;
-        background: url(../img/partner-icon2.png) center center no-repeat;
+        background: url(../../build/img/partner-icon2.png) center center no-repeat;
         width: 20px;
         height: 20px;
         right: 0;
@@ -1131,7 +1135,7 @@ body, html {
         content: "";
         position: absolute;
         display: block;
-        background: url(../img/partner-icon3.png) center center no-repeat;
+        background: url(../../build/img/partner-icon3.png) center center no-repeat;
         width: 20px;
         height: 20px;
         right: 0;
@@ -1144,7 +1148,7 @@ body, html {
         content: "";
         position: absolute;
         display: block;
-        background: url(../img/partner-icon4.png) center center no-repeat;
+        background: url(../../build/img/partner-icon4.png) center center no-repeat;
         width: 20px;
         height: 20px;
         right: 0;
@@ -1185,7 +1189,9 @@ body, html {
       width: 300px;
       height: 320px;
       font-size: 0;
-      text-align: center; }
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 5px; }
       .ideas .grid--item .item--picture {
         display: inline-block;
         width: 300px;
@@ -1198,9 +1204,9 @@ body, html {
         font-size: 22px;
         line-height: 22px;
         font-weight: 700;
-        color: #fff;
+        color: #333333;
         position: relative;
-        margin-top: -166px; }
+        line-height: 320px; }
     .ideas .grid--item:nth-child(5) {
       width: 610px; }
       .ideas .grid--item:nth-child(5) .item--picture {

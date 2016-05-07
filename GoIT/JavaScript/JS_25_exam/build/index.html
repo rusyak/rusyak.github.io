@@ -13,8 +13,8 @@
 	<![endif]-->
 	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
 	<script src="js/tmpl.js"></script>
-	<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
 	<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
 	<script src="js/script.main.js"></script>
 </head>
@@ -152,10 +152,9 @@
 				<h2 class="ideas__title">Discover holiday activity ideas</h2>
 				<script type="text/template" id="template">
 					<div class="grid" id="gallery">
-						<%for(var index in data){%>
-						<div class="grid--item">
-							<img src="<%=data[index].imageurl%>" alt="" class="item--picture">
-							<p class="item--text"><%= data[index].word%></p>
+						<% for (var i = 0; i < data.length; i++) { %>
+						<div class="grid--item tile--ideas" style = "background: url(<%= data[i].imageurl %>) no-repeat center; background-size: 100% 100%">
+						<p class="item--text"><%= data[i].word %></p>
 						</div>
 						<%}%>
 					</div>

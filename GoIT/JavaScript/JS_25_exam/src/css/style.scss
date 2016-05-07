@@ -374,6 +374,8 @@ body, html {
 			height: 130px;
 			font-size: 0;
 			text-align: center;
+			border: 1px solid #ccc;
+			border-radius: 5px;
 
 			.item--picture {
 				display: inline-block;
@@ -388,10 +390,9 @@ body, html {
 				font-size:22px;
 				line-height:22px;
 				font-weight:700;
-				color: #fff;
+				color: $color-text-dark;
 				position: relative;
-				margin-top: -80px;
-				margin-bottom: 80px;
+				line-height: 132px;
 			}
 		}
 	}
@@ -882,6 +883,8 @@ body, html {
 			font-size: 0;
 			text-align: center;
 			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 5px;
 
 			.item--picture {
 				display: inline-block;
@@ -896,9 +899,9 @@ body, html {
 				font-size:22px;
 				line-height:22px;
 				font-weight:700;
-				color: #fff;
+				color: $color-text-dark;
 				position: relative;
-				margin-top: -166px;
+				line-height: 317px;
 			}
 		}
 		.grid--item:nth-child(5) {
@@ -1311,6 +1314,7 @@ body, html {
 			.photo-partner--4 {
 				width: 122px;
 				height: 122px;
+				margin: 0 auto;
 				position: relative;				
 			}
 			.photo-partner--1:after {
@@ -1409,6 +1413,8 @@ body, html {
 			height: 320px;
 			font-size: 0;
 			text-align: center;
+			border: 1px solid #ccc;
+			border-radius: 5px;
 
 			.item--picture {
 				display: inline-block;
@@ -1423,9 +1429,9 @@ body, html {
 				font-size:22px;
 				line-height:22px;
 				font-weight:700;
-				color: #fff;
+				color: $color-text-dark;
 				position: relative;
-				margin-top: -166px;
+				line-height: 320px;
 			}
 		}
 		.grid--item:nth-child(5) {
