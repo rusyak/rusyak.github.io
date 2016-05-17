@@ -19,7 +19,6 @@ body, html {
 }
 @media screen and (min-width:320px) and (max-width:767px) {
 	.wrapper {
-		width: $width-temp-320;
 		margin: $position-center;
 	}
 	.header {
@@ -32,6 +31,8 @@ body, html {
 	}
 	.header-enter {
 		text-align: center;
+		width: $width-temp-320;
+		margin: $position-center;
 
 		.header-enter__login, .header-enter__signup {
 			display:inline-block;
@@ -57,8 +58,9 @@ body, html {
 		}
 	}
 	.header-logo__link {
-		margin-top: 116px;
 		text-align: center;
+		width: $width-temp-320;
+		margin: 116px auto 0;
 
 		a {
 			display:inline-block;
@@ -73,7 +75,8 @@ body, html {
 	}
 	.header-text {
 		text-align: center;
-		margin-top: 28px;
+		width: $width-temp-320;
+		margin: 28px auto 0;
 
 		.header-text__title {
 			margin-bottom:10px;
@@ -111,7 +114,8 @@ body, html {
 		}
 	}
 	.main {
-		width: 100%;
+		width: $width-temp-320;
+		margin: $position-center;
 	}
 	.howitworks {
 		text-align: center;
@@ -143,18 +147,13 @@ body, html {
 			font-weight: 700;
 			text-transform:uppercase;
 			border-radius:10px;
-			margin: 70px 0 0 20px;
-		}
-		.block-item2 {
-			.howitworks__step-number {
-				margin: 100px 0 0 20px;
-			}				
+			margin: 100px auto 0;
 		}
 		.howitworks__step-title {
 			margin:13px 20px 0;
 			font-size:24px;
-			line-height:30px;
-			text-align:left;
+			line-height:20px;
+			text-align:center;
 			color:#fff;
 			font-family:$font-montserrat;
 			font-weight:700;
@@ -492,7 +491,6 @@ body, html {
 
 @media screen and (min-width:768px) and (max-width:1439px) {
 	.wrapper {
-		width: $width-temp-768;
 		margin: $position-center;
 	}
 	.header {
@@ -627,17 +625,17 @@ body, html {
 			font-family:$font-montserrat;
 			text-transform:uppercase;
 			border-radius:10px;
-			margin: 212px 0 0 20px;
+			margin: 240px 0 0 20px;
 		}
 		.block-item2 {
 			.howitworks__step-number {
-				margin: 259px 0 0 20px;
+				margin: 240px 0 0 20px;
 			}				
 		}
 		.howitworks__step-title {
 			margin:15px 20px 0;
 			font-size:24px;
-			line-height:29px;
+			line-height:20px;
 			text-align:left;
 			color:#fff;
 			font-family:$font-montserrat;
@@ -725,7 +723,8 @@ body, html {
 		}
 		.gallery-item {
 			display: inline-table;
-			width: 200px;
+			width: 150px;
+			margin: 0 15px;
 		}
 		.gallery-item__name {
 			font-family:$font-montserrat;
@@ -752,20 +751,8 @@ body, html {
 		}
 		.partners__gallery {
 			list-style: none;
-			width: 465px;
-			margin: 7px auto;
-
-			li:first-child,
-			li:nth-child(3) {
-				margin-left: 5px;
-			}
-			li:nth-child(2) {
-				margin-left: 56px;
-			}
-			li:nth-child(4) {
-				margin-left: 54px;
-			}
-
+			margin: 30px auto;
+			text-align: center;
 		}
 		.gallery-item__photo {
 			position: relative;
@@ -862,7 +849,7 @@ body, html {
 	
 	.ideas {
 		width: 100%;
-		margin-top: 97px;    
+		margin-top: 60px;    
 		margin-bottom: 130px;
 		
 		.ideas__title {
@@ -968,6 +955,10 @@ body, html {
 		border-top: 5px solid $color-button;
 		font-size: 0;
 
+		.footer-wrap {
+			width: 768px;
+			margin: 0 auto;
+		}
 		div {
 			display: inline-table;
 			width: 20%;
@@ -1166,11 +1157,11 @@ body, html {
 			font-weight: 700;
 			text-transform:uppercase;
 			border-radius:10px;
-			margin: 229px 0 0 20px;
+			margin: 240px 0 0 20px;
 		}
 		.block-item2 {
 			.howitworks__step-number {
-				margin: 259px 0 0 20px;
+				margin: 240px 0 0 20px;
 			}				
 		}
 		.howitworks__step-title {
@@ -1262,7 +1253,8 @@ body, html {
 		}
 		.gallery-item {
 			display: inline-table;
-			width: 200px;
+			width: 174px;
+			margin: 0 25px;
 		}
 		.gallery-item__name {
 			font-family:$font-montserrat;
@@ -1288,18 +1280,8 @@ body, html {
 		}
 		.partners__gallery {
 			list-style: none;
-			width: 920px;
-			margin: -7px auto;
-
-			.gallery-item:first-child {
-				margin-right: 31px;
-			}
-			.gallery-item:nth-child(2) {
-				margin-right: 39px;
-			}
-			.gallery-item:nth-child(3) {
-				margin-right: 36px;
-			}
+			margin: 30px auto;
+			text-align: center;
 		}
 		.gallery-item__photo {
 			position: relative;

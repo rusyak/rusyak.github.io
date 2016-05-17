@@ -8,7 +8,6 @@ body, html {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .wrapper {
-    width: 320px;
     margin: 0 auto; }
 
   .header {
@@ -20,7 +19,9 @@ body, html {
     height: 540px; }
 
   .header-enter {
-    text-align: center; }
+    text-align: center;
+    width: 320px;
+    margin: 0 auto; }
     .header-enter .header-enter__login, .header-enter .header-enter__signup {
       display: inline-block;
       font-size: 14px;
@@ -42,8 +43,9 @@ body, html {
       margin-left: 16px; }
 
   .header-logo__link {
-    margin-top: 116px;
-    text-align: center; }
+    text-align: center;
+    width: 320px;
+    margin: 116px auto 0; }
     .header-logo__link a {
       display: inline-block;
       text-decoration: none;
@@ -56,7 +58,8 @@ body, html {
 
   .header-text {
     text-align: center;
-    margin-top: 28px; }
+    width: 320px;
+    margin: 28px auto 0; }
     .header-text .header-text__title {
       margin-bottom: 10px;
       font-family: "Montserrat", serif;
@@ -89,7 +92,8 @@ body, html {
       color: #ff4e50; }
 
   .main {
-    width: 100%; }
+    width: 320px;
+    margin: 0 auto; }
 
   .howitworks {
     text-align: center; }
@@ -117,14 +121,12 @@ body, html {
     font-weight: 700;
     text-transform: uppercase;
     border-radius: 10px;
-    margin: 70px 0 0 20px; }
-  .howitworks__wrapper-jcarousels .block-item2 .howitworks__step-number {
-    margin: 100px 0 0 20px; }
+    margin: 100px auto 0; }
   .howitworks__wrapper-jcarousels .howitworks__step-title {
     margin: 13px 20px 0;
     font-size: 24px;
-    line-height: 30px;
-    text-align: left;
+    line-height: 20px;
+    text-align: center;
     color: #fff;
     font-family: "Montserrat", serif;
     font-weight: 700; }
@@ -413,7 +415,6 @@ body, html {
       font-size: 12px; } }
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .wrapper {
-    width: 768px;
     margin: 0 auto; }
 
   .header {
@@ -530,13 +531,13 @@ body, html {
     font-family: "Montserrat", serif;
     text-transform: uppercase;
     border-radius: 10px;
-    margin: 212px 0 0 20px; }
+    margin: 240px 0 0 20px; }
   .howitworks__wrapper-jcarousels .block-item2 .howitworks__step-number {
-    margin: 259px 0 0 20px; }
+    margin: 240px 0 0 20px; }
   .howitworks__wrapper-jcarousels .howitworks__step-title {
     margin: 15px 20px 0;
     font-size: 24px;
-    line-height: 29px;
+    line-height: 20px;
     text-align: left;
     color: #fff;
     font-family: "Montserrat", serif;
@@ -611,7 +612,8 @@ body, html {
       text-align: center; }
     .partners .gallery-item {
       display: inline-table;
-      width: 200px; }
+      width: 150px;
+      margin: 0 15px; }
     .partners .gallery-item__name {
       font-family: "Montserrat", serif;
       font-weight: 700;
@@ -634,15 +636,8 @@ body, html {
       margin-left: -7px; }
     .partners .partners__gallery {
       list-style: none;
-      width: 465px;
-      margin: 7px auto; }
-      .partners .partners__gallery li:first-child,
-      .partners .partners__gallery li:nth-child(3) {
-        margin-left: 5px; }
-      .partners .partners__gallery li:nth-child(2) {
-        margin-left: 56px; }
-      .partners .partners__gallery li:nth-child(4) {
-        margin-left: 54px; }
+      margin: 30px auto;
+      text-align: center; }
     .partners .gallery-item__photo {
       position: relative;
       margin: 22px 0 13px; }
@@ -727,7 +722,7 @@ body, html {
 
   .ideas {
     width: 100%;
-    margin-top: 97px;
+    margin-top: 60px;
     margin-bottom: 130px; }
     .ideas .ideas__title {
       font-family: "Montserrat", serif;
@@ -816,6 +811,9 @@ body, html {
     padding-bottom: 15px;
     border-top: 5px solid #ff4e50;
     font-size: 0; }
+    .footer .footer-wrap {
+      width: 768px;
+      margin: 0 auto; }
     .footer div {
       display: inline-table;
       width: 20%;
@@ -983,9 +981,9 @@ body, html {
     font-weight: 700;
     text-transform: uppercase;
     border-radius: 10px;
-    margin: 229px 0 0 20px; }
+    margin: 240px 0 0 20px; }
   .howitworks__wrapper-jcarousels .block-item2 .howitworks__step-number {
-    margin: 259px 0 0 20px; }
+    margin: 240px 0 0 20px; }
   .howitworks__wrapper-jcarousels .howitworks__step-title {
     margin: 13px 20px 0;
     font-size: 24px;
@@ -1062,7 +1060,8 @@ body, html {
       text-align: center; }
     .partners .gallery-item {
       display: inline-table;
-      width: 200px; }
+      width: 174px;
+      margin: 0 25px; }
     .partners .gallery-item__name {
       font-family: "Montserrat", serif;
       font-weight: 700;
@@ -1084,14 +1083,8 @@ body, html {
       margin-left: -4px; }
     .partners .partners__gallery {
       list-style: none;
-      width: 920px;
-      margin: -7px auto; }
-      .partners .partners__gallery .gallery-item:first-child {
-        margin-right: 31px; }
-      .partners .partners__gallery .gallery-item:nth-child(2) {
-        margin-right: 39px; }
-      .partners .partners__gallery .gallery-item:nth-child(3) {
-        margin-right: 36px; }
+      margin: 30px auto;
+      text-align: center; }
     .partners .gallery-item__photo {
       position: relative;
       margin: 22px 0 13px; }
