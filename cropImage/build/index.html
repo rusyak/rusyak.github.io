@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropper/2.3.4/cropper.min.css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/cropper/2.3.4/cropper.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.main.css">
+	<script type="text/javascript" src="js/script.main.js"></script>
+	<title>Crop Image App</title>
+</head>
+<body>
+
+	<div class="container">
+		<h1 class="page-header text-center">Crop and save the image</h1>
+		<div class="row">
+			<div class="col-sm-6 col-sm-offset-3">
+				<div class="text-center">
+					<img id="image" src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Flag_colors.jpg" alt="Picture">
+				</div>
+				<button type="button" class="btn btn-primary col-sm-3 col-sm-offset-2" id="button">Crop the image</button>
+				
+				<!-- Кнопка для загрузки картинки -->
+				<button type="button" class="btn btn-success col-sm-3 col-sm-offset-2 btn-file">
+					Upload the image <input type="file" id="upload">
+				</button>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal fade" id="myModal" aria-labelledby="modalLabel" role="dialog" tabindex="-1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="modalLabel">The cropped image</h4>
+				</div>
+				<div class="modal-body">
+						<img id="result" src="" alt="">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+					<button type="button" class="btn btn-primary save-button">Скачать</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
