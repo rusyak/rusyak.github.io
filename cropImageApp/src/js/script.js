@@ -25,6 +25,8 @@ $(function () {
     canvasUrl = croppedCanvas.toDataURL();
     $result.attr('src', canvasUrl);
 
+    $image.cropper('reset');
+
   });
 
   $buttonSave.on('click', function () {
@@ -42,7 +44,7 @@ $(function () {
       $image.attr('src', event2.target.result);
       $('img[crossorigin="anonymous"]').attr('src', event2.target.result);
     };
-    
+    $image.cropper('reset');
     fileReader.readAsDataURL(file);
   });
 
