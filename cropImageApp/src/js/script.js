@@ -1,7 +1,6 @@
 $(function () {
   var $image = $('#image');
-  var $button = $('#button');
-  var $buttonSave = $('.save-button');
+  var $cropButton = $('.crop-button');
   var $result = $('#result');
   var croppable = false;
   var canvasUrl;
@@ -14,7 +13,7 @@ $(function () {
     }
   });
 
-  $button.on('click', function () {
+  $cropButton.on('click', function () {
     $('#myModal').modal('show');
     var croppedCanvas;
     if (!croppable) {
@@ -29,10 +28,17 @@ $(function () {
 
   });
 
-  $buttonSave.on('click', function () {
+  $('.save-as-png').on('click', function () {
     var a = document.createElement('a');
     a.href = canvasUrl;
     a.download = 'image.png';
+    a.click(); 
+  });
+
+  $('.save-as-jpg').on('click', function () {
+    var a = document.createElement('a');
+    a.href = canvasUrl;
+    a.download = 'image.jpg';
     a.click(); 
   });
 
