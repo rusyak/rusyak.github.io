@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Page Navigation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css"> 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-route.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+
+</head>
+<body ng-app="routingApp">
+
+  <div class="container-fluid">
+
+  <h2 class="well">Page navigation</h2>
+
+    <div class="well">
+      <a ng-href="#/pages/first" class="btn btn-success btn-lg" role="button">AngularJS</a>
+      <a ng-href="#/pages/second" class="btn btn-danger btn-lg" role="button">ReactJS</a>
+      <a ng-href="#/" class="btn btn-default btn-lg" role="button">Clean</a>
+
+    </div>
+
+    <div ng-view class="well"></div>
+
+  </div>
+
+
+</body>
+</html>
