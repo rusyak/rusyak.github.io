@@ -3,10 +3,10 @@ var routingApp = angular.module('routingApp', ['ngRoute'])
 routingApp.config(['$routeProvider',function($routeProvider) {
 	$routeProvider
 	.when('/pages/first', {
-		templateUrl: '/pages/first.html'
+		templateUrl: '/angularTestApp/index.html#/pages/first.html'
 	})
 	.when('/pages/second', {
-		templateUrl: '/pages/second.html'
+		templateUrl: '/angularTestApp/index.html#/pages/second.html'
 	})
 	.otherwise({
 		redirectTo: '/'
